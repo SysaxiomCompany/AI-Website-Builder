@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="{{ theme.palette }}" data-font="{{ theme.font }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ slots.name }}</title>
+  <meta name="description" content="{{ description }}">
+  {%- if inline %}
+  <style>
+{{ css }}
+  </style>
+  {%- else %}
+  <link rel="stylesheet" href="style.css">
+  {%- endif %}
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+{{ header_html }}
+<main id="main">
+{{ main_html }}
+</main>
+{{ footer_html }}
+{%- if inline %}
+<script>
+{{ js }}
+</script>
+{%- else %}
+<script src="script.js" defer></script>
+{%- endif %}
+</body>
+</html>

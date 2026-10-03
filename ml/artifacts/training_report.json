@@ -1,0 +1,222 @@
+{
+  "trained_at_utc": "2026-10-03T17:36:53Z",
+  "seed": 42,
+  "train_seconds": 4.6,
+  "libraries": {
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0",
+    "scipy": "1.17.1"
+  },
+  "tool": {
+    "folder": "/Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/ML-Training-App",
+    "single_label": "train_text_model(feature_mode='tfidf')",
+    "multi_label": "train_multilabel_text_model"
+  },
+  "data": {
+    "train": 690,
+    "val": 150,
+    "test": 150,
+    "site_types": [
+      "portfolio",
+      "restaurant",
+      "small_business",
+      "education",
+      "blog",
+      "nonprofit"
+    ],
+    "sections": [
+      "navbar",
+      "hero",
+      "about",
+      "features",
+      "gallery",
+      "pricing",
+      "testimonials",
+      "faq",
+      "contact",
+      "footer"
+    ],
+    "mandatory_sections": [
+      "navbar",
+      "hero",
+      "footer"
+    ]
+  },
+  "site_type": {
+    "selection": {
+      "name": "logreg(C=1.0,balanced)",
+      "params": {
+        "family": "logistic_regression",
+        "C": 1.0,
+        "class_weight": "balanced"
+      },
+      "val_macro_f1": 0.9933306655995731,
+      "refit_on_train_val": false,
+      "candidates_tried": [
+        "logreg(C=1.0,balanced)",
+        "logreg(C=3.0,balanced)",
+        "logreg(C=10.0,balanced)",
+        "logreg(C=30.0,balanced)"
+      ]
+    },
+    "cv": {
+      "k": 5,
+      "split": "train",
+      "n": 690,
+      "folds": [
+        {
+          "fold": 1,
+          "accuracy": 0.9927536231884058,
+          "macro_f1": 0.9927501970055163
+        },
+        {
+          "fold": 2,
+          "accuracy": 0.9710144927536232,
+          "macro_f1": 0.9711519683420701
+        },
+        {
+          "fold": 3,
+          "accuracy": 0.9927536231884058,
+          "macro_f1": 0.9927501970055163
+        },
+        {
+          "fold": 4,
+          "accuracy": 0.9565217391304348,
+          "macro_f1": 0.9564254547729306
+        },
+        {
+          "fold": 5,
+          "accuracy": 0.9855072463768116,
+          "macro_f1": 0.9855003940110324
+        }
+      ],
+      "accuracy_mean": 0.9797101449275362,
+      "accuracy_std": 0.014051245963525576,
+      "macro_f1_mean": 0.9797156422274131,
+      "macro_f1_std": 0.014064365835715947
+    },
+    "refit_on_train_val": false
+  },
+  "sections": {
+    "selection": {
+      "name": "logreg(C=30.0,balanced)",
+      "params": {
+        "family": "logistic_regression",
+        "C": 30.0,
+        "class_weight": "balanced"
+      },
+      "val_macro_f1": 0.9727357827015861,
+      "candidates_tried": [
+        "logreg(C=30.0,balanced)",
+        "logreg(C=10.0,balanced)",
+        "logreg(C=3.0,balanced)",
+        "logreg(C=1.0,balanced)"
+      ],
+      "refit_on_train_val": false,
+      "thresholds_chosen_on": "validation split"
+    },
+    "labels": [
+      "navbar",
+      "hero",
+      "about",
+      "features",
+      "gallery",
+      "pricing",
+      "testimonials",
+      "faq",
+      "contact",
+      "footer"
+    ],
+    "modeled_labels": [
+      "about",
+      "features",
+      "gallery",
+      "pricing",
+      "testimonials",
+      "faq",
+      "contact"
+    ],
+    "constant_labels": {
+      "navbar": true,
+      "hero": true,
+      "footer": true
+    },
+    "thresholds": {
+      "navbar": 1.0,
+      "hero": 1.0,
+      "about": 0.25,
+      "features": 0.55,
+      "gallery": 0.5,
+      "pricing": 0.4,
+      "testimonials": 0.45,
+      "faq": 0.3,
+      "contact": 0.1,
+      "footer": 1.0
+    },
+    "cv": {
+      "k": 5,
+      "split": "train",
+      "n": 690,
+      "labels_scored": [
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact"
+      ],
+      "thresholds_used": "thresholds chosen on the validation split",
+      "folds": [
+        {
+          "fold": 1,
+          "micro_f1": 0.9466882067851373,
+          "macro_f1": 0.9465192469709189,
+          "exact_match": 0.6521739130434783
+        },
+        {
+          "fold": 2,
+          "micro_f1": 0.9282700421940928,
+          "macro_f1": 0.9268633489499776,
+          "exact_match": 0.6086956521739131
+        },
+        {
+          "fold": 3,
+          "micro_f1": 0.9463414634146341,
+          "macro_f1": 0.9415406535412555,
+          "exact_match": 0.6739130434782609
+        },
+        {
+          "fold": 4,
+          "micro_f1": 0.9279050042408821,
+          "macro_f1": 0.9330775981854831,
+          "exact_match": 0.6521739130434783
+        },
+        {
+          "fold": 5,
+          "micro_f1": 0.9284525790349417,
+          "macro_f1": 0.9301143818652553,
+          "exact_match": 0.6086956521739131
+        }
+      ],
+      "micro_f1_mean": 0.9355314591339375,
+      "micro_f1_std": 0.008970292574573725,
+      "macro_f1_mean": 0.935623045902578,
+      "macro_f1_std": 0.007311665366317057,
+      "exact_match_mean": 0.6391304347826088,
+      "exact_match_std": 0.02608695652173911
+    }
+  },
+  "confidence": {
+    "threshold": 0.3106,
+    "rule": "low confidence if max site-type probability < threshold, or fewer than 2 words, or < 50% of words in the training vocabulary",
+    "threshold_choice": "5th percentile of the max predicted probability over the validation split (so about 5% of in-distribution validation prompts are flagged by design)",
+    "min_words": 2,
+    "min_vocab_coverage": 0.5,
+    "validation_flagged_by_threshold": 0.05333333333333334,
+    "validation_flagged_by_coverage": 0.0,
+    "validation_n": 150
+  }
+}

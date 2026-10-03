@@ -1,0 +1,12 @@
+/* Palette: berry */
+:root {
+  --bg: #fffafd;
+  --surface: #fbeef5;
+  --text: #2a1020;
+  --muted: #6b3d57;
+  --primary: #9d1f63;
+  --on-primary: #ffffff;
+  --primary-2: #721548;
+  --border: #efd5e3;
+  --accent: #7b3fa0;
+}

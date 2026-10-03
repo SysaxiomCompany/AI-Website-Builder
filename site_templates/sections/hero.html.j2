@@ -1,0 +1,12 @@
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <div class="container">
+    {%- if slots.tagline %}
+    <p class="eyebrow">{{ slots.tagline }}</p>
+    {%- endif %}
+    <h1 id="hero-title">{{ c.headline }}</h1>
+    <p class="lead">{{ c.subheadline }}</p>
+    {%- if cta_href %}
+    <div class="hero-actions"><a class="btn" href="{{ cta_href }}">{{ c.cta_label }}</a></div>
+    {%- endif %}
+  </div>
+</section>

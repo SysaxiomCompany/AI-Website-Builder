@@ -1,0 +1,12 @@
+/* Palette: forest */
+:root {
+  --bg: #fbfdf9;
+  --surface: #eef5ee;
+  --text: #14291b;
+  --muted: #3f5a48;
+  --primary: #1b6b3a;
+  --on-primary: #ffffff;
+  --primary-2: #124d29;
+  --border: #d3e3d6;
+  --accent: #2d7a6b;
+}

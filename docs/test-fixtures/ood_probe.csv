@@ -1,0 +1,32 @@
+text,kind
+asdf qwerty,gibberish
+zxcv bnm,gibberish
+kjhgf lkjh poiuy,gibberish
+!!!???,gibberish
+12345 67890,gibberish
+lorem ipsum dolor sit amet,gibberish
+qwertyuiop asdfghjkl,gibberish
+aaaa bbbb cccc,gibberish
+what is the capital of France,unrelated
+how do I reset my router password,unrelated
+write me a poem about autumn,unrelated
+who won the world cup in 2018,unrelated
+translate hello into Spanish,unrelated
+book a flight to London tomorrow,unrelated
+explain how photosynthesis works,unrelated
+what time is it in Tokyo,unrelated
+solve x squared plus two x equals eight,unrelated
+my laptop is making a strange noise,unrelated
+hi,too short
+site,too short
+a,too short
+make,too short
+ok,too short
+crea un sitio web para mi panaderia con menu y galeria,non-English
+ich brauche eine webseite fuer mein restaurant,non-English
+creer un site pour mon cafe avec une carte,non-English
+我想要一个网站,non-English
+मुझे एक वेबसाइट चाहिए,non-English
+quiero una pagina para mi escuela de musica,non-English
+SELECT * FROM users;,code
+def main(): pass,code

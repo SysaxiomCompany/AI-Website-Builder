@@ -1,0 +1,177 @@
+{
+  "generated_at_utc": "2026-10-03T18:07:44Z",
+  "feature_mode": "tfidf",
+  "seed": 42,
+  "sizes": {
+    "train": 840,
+    "val": 180,
+    "test": 180
+  },
+  "selection": {
+    "clf": {
+      "name": "logreg(C=10.0,balanced)",
+      "params": {
+        "family": "logistic_regression",
+        "C": 10.0,
+        "class_weight": "balanced"
+      },
+      "val_macro_f1": 0.9834183828442987,
+      "refit_on_train_val": false,
+      "candidates_tried": [
+        "logreg(C=10.0,balanced)",
+        "logreg(C=30.0,balanced)",
+        "logreg(C=3.0,balanced)",
+        "logreg(C=1.0,balanced)"
+      ]
+    }
+  },
+  "feature_spec": {
+    "feature_mode": "tfidf",
+    "text_columns": [
+      "text"
+    ],
+    "tfidf_params": {
+      "word_ngram_range": [
+        1,
+        2
+      ],
+      "char_ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 1,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "max_features": null
+    },
+    "categorical_columns": [],
+    "pair_columns": null,
+    "length_features": false,
+    "embedding_model": null
+  },
+  "libraries": {
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0",
+    "scipy": "1.17.1"
+  },
+  "test": {
+    "n": 180,
+    "classification": {
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9888858016115588,
+      "weighted_f1": 0.9888858016115587,
+      "labels": [
+        "portfolio",
+        "restaurant",
+        "small_business",
+        "education",
+        "blog",
+        "nonprofit"
+      ],
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          29,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "per_class": {
+        "portfolio": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "restaurant": {
+          "precision": 1.0,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9830508474576272,
+          "support": 30.0
+        },
+        "small_business": {
+          "precision": 1.0,
+          "recall": 0.9666666666666667,
+          "f1-score": 0.9830508474576272,
+          "support": 30.0
+        },
+        "education": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 30.0
+        },
+        "blog": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "nonprofit": {
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "f1-score": 0.9836065573770492,
+          "support": 30.0
+        },
+        "accuracy": 0.9888888888888889,
+        "macro avg": {
+          "precision": 0.989247311827957,
+          "recall": 0.9888888888888889,
+          "f1-score": 0.9888858016115588,
+          "support": 180.0
+        },
+        "weighted avg": {
+          "precision": 0.989247311827957,
+          "recall": 0.9888888888888889,
+          "f1-score": 0.9888858016115587,
+          "support": 180.0
+        }
+      },
+      "n": 180
+    }
+  }
+}

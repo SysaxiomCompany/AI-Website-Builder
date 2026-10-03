@@ -1,0 +1,31 @@
+{
+  "label": "Blog",
+  "default_name": "My Blog",
+  "default_tagline": "Notes, stories and things I am learning",
+  "nav_labels": {"about": "About", "features": "Latest posts", "gallery": "Gallery", "pricing": "Support", "testimonials": "Readers", "faq": "FAQ", "contact": "Contact"},
+  "hero": {"headline": "{name}", "subheadline": "Thoughtful writing, practical tips and the occasional story. New posts most weeks.", "cta_label": "Read the latest", "cta_target": "features"},
+  "about": {"title": "About the author", "paragraphs": ["I write about the things I find interesting and try to explain them simply. This is sample text: replace it with your own story.", "Thank you for reading. Your messages and ideas are what keep this going."]},
+  "features": {"title": "Latest posts", "intro": "Fresh from the notebook. These are sample titles, replace them with your own posts.", "items": [
+    {"title": "Ten things I learned this year", "text": "A short, honest look back with a few lessons worth sharing.", "icon": "star"},
+    {"title": "A beginner's guide to starting small", "text": "How to begin a new habit without burning out in week two.", "icon": "book"},
+    {"title": "My favourite tools right now", "text": "The apps, books and gear that earned a permanent place on my desk.", "icon": "bolt"},
+    {"title": "Notes from a long weekend", "text": "Photos, thoughts and a few wrong turns.", "icon": "camera"},
+    {"title": "Questions readers asked me", "text": "Your questions answered in plain language.", "icon": "heart"},
+    {"title": "What I am reading", "text": "Short reviews and a pile of recommendations.", "icon": "check"}]},
+  "gallery": {"title": "From the archive", "items": ["Desk at sunrise", "Notebook pages", "Trip highlights", "Reading corner", "Coffee and drafts", "Favourite view"]},
+  "pricing": {"title": "Support the blog", "intro": "The blog is free to read. If you would like to support it, these are the options. Sample figures.", "plans": [
+    {"name": "Reader", "price": "$0", "period": "always free", "features": ["All posts", "Occasional updates"], "highlight": false},
+    {"name": "Supporter", "price": "$3", "period": "per month", "features": ["Early access", "Behind-the-scenes notes", "Thank-you page"], "highlight": true},
+    {"name": "Patron", "price": "$10", "period": "per month", "features": ["Everything in Supporter", "Vote on topics", "Monthly Q&A"], "highlight": false}]},
+  "testimonials": {"title": "From readers", "items": [
+    {"quote": "Clear, kind and useful. One of the few blogs I read to the end.", "author": "Chloe B.", "role": "Reader"},
+    {"quote": "Your post saved me hours. Thank you!", "author": "Ravi S.", "role": "Newsletter subscriber"},
+    {"quote": "I look forward to every new article.", "author": "Anna K.", "role": "Reader"}]},
+  "faq": {"title": "Questions", "items": [
+    {"q": "How often do you post?", "a": "Usually once a week."},
+    {"q": "Can I suggest a topic?", "a": "Please do. Use the contact form below."},
+    {"q": "Can I share your posts?", "a": "Sharing a link is always welcome; please ask before reprinting."},
+    {"q": "Do you accept guest posts?", "a": "Occasionally. Send a short pitch."}]},
+  "contact": {"title": "Say hello", "intro": "Questions, ideas or feedback are welcome. I read every message."},
+  "footer": {"text": "{name}. Sample content, edit it to make it yours."}
+}

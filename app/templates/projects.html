@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Projects - AI Website Builder{% endblock %}
+{% block content %}
+<section class="intro row-between">
+  <div><h1>Projects</h1><p class="lead">Websites you have generated. They are stored in a local database on this computer.</p></div>
+  <a class="btn" href="{{ url_for('main.builder_page') }}">New website</a>
+</section>
+<div id="projects-error" class="banner banner-error" role="alert" hidden></div>
+<div id="projects-loading" class="skeleton-list" aria-label="Loading projects"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+<section id="projects-empty" class="empty-state" hidden>
+  <svg viewBox="0 0 64 64" aria-hidden="true" class="empty-art"><rect x="8" y="12" width="48" height="40" rx="6"/><path d="M8 24h48M18 18h2M26 18h2"/></svg>
+  <h2>No projects yet</h2>
+  <p>Describe a website on the Builder page and it will show up here.</p>
+  <p><a class="btn" href="{{ url_for('main.builder_page') }}">Create your first website</a></p>
+</section>
+<ul id="project-list" class="project-list" hidden></ul>
+<dialog id="confirm-dialog" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <h2 id="confirm-title">Delete project?</h2>
+    <p id="confirm-text"></p>
+    <div class="actions"><button class="btn btn-ghost" value="cancel">Cancel</button><button class="btn btn-danger" value="ok" id="confirm-ok">Delete</button></div>
+  </form>
+</dialog>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/projects.js') }}"></script>{% endblock %}

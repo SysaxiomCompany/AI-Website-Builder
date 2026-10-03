@@ -1,0 +1,11 @@
+<section class="alt" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title">{{ c.title }}</h2>
+    {%- for item in c["items"] %}
+    <details>
+      <summary>{{ item.q }}</summary>
+      <p>{{ item.a }}</p>
+    </details>
+    {%- endfor %}
+  </div>
+</section>

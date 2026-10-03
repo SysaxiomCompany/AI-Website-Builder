@@ -1,0 +1,31 @@
+{
+  "label": "Non-profit",
+  "default_name": "Our Community Group",
+  "default_tagline": "Together we can do more",
+  "nav_labels": {"about": "Our mission", "features": "Programs", "gallery": "Gallery", "pricing": "Ways to give", "testimonials": "Stories", "faq": "FAQ", "contact": "Get involved"},
+  "hero": {"headline": "{name}: together we can do more", "subheadline": "We bring people together to make our community a kinder, healthier and fairer place. Join us as a volunteer or supporter.", "cta_label": "Our programs", "cta_target": "features"},
+  "about": {"title": "Our mission", "paragraphs": ["We are a community-run organisation powered by volunteers and supporters. This is sample text: replace it with your own mission.", "Every contribution of time or money goes directly into our programs and the people they serve."]},
+  "features": {"title": "Our programs", "intro": "Here is how we make a difference every week.", "items": [
+    {"title": "Community meals", "text": "Weekly meals open to everyone, prepared and served by volunteers.", "icon": "heart"},
+    {"title": "Youth mentoring", "text": "Trained mentors support young people with school and confidence.", "icon": "star"},
+    {"title": "Clean-up days", "text": "Monthly events to care for our parks, streets and waterways.", "icon": "check"},
+    {"title": "Learning workshops", "text": "Free sessions on practical skills for all ages.", "icon": "book"},
+    {"title": "Emergency support", "text": "Fast help for neighbours facing a sudden crisis.", "icon": "shield"},
+    {"title": "Volunteer network", "text": "A friendly team that welcomes new members all year.", "icon": "bolt"}]},
+  "gallery": {"title": "Moments from our events", "items": ["Volunteers at work", "Community meal", "Clean-up day", "Youth workshop", "Fundraiser evening", "Thank-you day"]},
+  "pricing": {"title": "Ways to give", "intro": "Every amount helps. Sample figures, please edit.", "plans": [
+    {"name": "Supporter", "price": "$10", "period": "per month", "features": ["Funds one community meal", "Our newsletter"], "highlight": false},
+    {"name": "Champion", "price": "$25", "period": "per month", "features": ["Funds a mentoring session", "Invitation to events", "Our newsletter"], "highlight": true},
+    {"name": "One-off gift", "price": "$50", "period": "one time", "features": ["Supports any program", "A personal thank-you"], "highlight": false}]},
+  "testimonials": {"title": "Stories", "items": [
+    {"quote": "The weekly meal is the highlight of my week. I have met wonderful people.", "author": "Margaret H.", "role": "Community member"},
+    {"quote": "Volunteering here taught me more than I gave. It is a real family.", "author": "Omar F.", "role": "Volunteer"},
+    {"quote": "My mentor helped me believe I could finish school.", "author": "Jade T.", "role": "Young person"}]},
+  "faq": {"title": "Questions", "items": [
+    {"q": "How can I volunteer?", "a": "Send us a message and we will invite you to our next orientation."},
+    {"q": "Where does my donation go?", "a": "Into our programs. We publish a simple summary each year."},
+    {"q": "Can my company get involved?", "a": "Yes, we welcome team volunteering days and sponsorship."},
+    {"q": "Do I need experience?", "a": "No. We provide training and support."}]},
+  "contact": {"title": "Get involved", "intro": "Volunteer, donate or just say hello. We would love to hear from you at {location}."},
+  "footer": {"text": "{name}. Sample content, edit it to make it yours."}
+}

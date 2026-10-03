@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Website Builder - Architecture Briefing</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1f23;--mut:#5d636c;--card:#fff;--bd:#dfe1e5;--ac:#3b5bdb;--ok:#1e7e34;--warn:#b25e00}
+@media(prefers-color-scheme:dark){:root{--bg:#14161a;--fg:#e6e8eb;--mut:#9aa1ab;--card:#1c1f24;--bd:#2d3138;--ac:#7c93ff;--ok:#5fcf80;--warn:#f0a050}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:920px;margin:0 auto;padding:24px 16px 64px}
+h1{margin:0 0 4px}h2{margin-top:36px;border-bottom:1px solid var(--bd);padding-bottom:6px}
+.sub{color:var(--mut)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px}.stat b{display:block;font-size:26px;color:var(--ac)}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:14px}th,td{border:1px solid var(--bd);padding:7px 9px;text-align:left;vertical-align:top}
+.ok{color:var(--ok);font-weight:600}.no{color:var(--warn);font-weight:600}
+pre{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px;overflow-x:auto;font-size:13px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.shots figure{margin:0}.shots img{width:100%;border:1px solid var(--bd);border-radius:8px}
+figcaption{font-size:13px;color:var(--mut)}
+</style></head><body><main>
+<h1>AI Website Builder</h1>
+<p class="sub">A local Flask app that turns a plain-English description into a responsive, editable, exportable website using two trained scikit-learn classifiers, rules and a template library. &middot; ~5 min read &middot; Last verified 2026-10-03</p>
+
+<div class="stats">
+<div class="stat"><b>4 / 4</b>objectives verified</div>
+<div class="stat"><b>167</b>pytest tests passing</div>
+<div class="stat"><b>4 + error</b>pages (Builder, Editor, Projects, About)</div>
+<div class="stat"><b>4</b>defects found and fixed this cycle</div>
+</div>
+
+<h2>How it works</h2>
+<pre>ml/data (templated, team-authored)  -> ML-Training-App text_pipeline (TF-IDF) -> ml/artifacts/*.joblib, metrics.json, model_card.md
+Browser UI -> Flask routes -> Prompt Preprocessor
+                              -> Requirement Extractor: site-type classifier + section predictor (LEARNED)
+                                                        + Slot Extractor, low-confidence check (RULES)
+                              -> Component Assembler (section templates + content bank) -> Theme Engine
+                              -> Renderer (Jinja2 autoescape, fixed script.js) -> live preview iframe / ZIP export
+                              -> SQLite: projects, feedback</pre>
+<p>Learned: site type and section prediction only. Rule-based: slots, theme, ordering, the mandatory navbar/hero/footer, content selection, the low-confidence check.</p>
+
+<h2>Tech stack</h2>
+<table><tr><th>Layer</th><th>Used</th><th>Deviation from spec</th></tr>
+<tr><td>Web</td><td>Flask + Jinja2, vanilla JS, no CDN or web fonts</td><td>None</td></tr>
+<tr><td>ML</td><td>scikit-learn TF-IDF + linear models, joblib; trained through ML-Training-App</td><td>The shared tool got a generic optional multi-label function; train.py imports it (path via <code>ML_TRAINING_APP</code>)</td></tr>
+<tr><td>Storage / export</td><td>SQLite, zipfile</td><td>None</td></tr>
+<tr><td>Python</td><td>3.11+ (pinned numpy/pandas/scikit-learn need it)</td><td>Spec says 3.10+; scripts enforce 3.11</td></tr>
+<tr><td>Training data</td><td>1200 templated prompts + 122 held-out eval prompts, authored by the build</td><td>Spec expected team-supplied data; approved Change Control, labels not reviewed by a human</td></tr></table>
+
+<h2>Standard checklist</h2>
+<table><tr><th>Item</th><th></th><th>Why</th></tr>
+<tr><td>Scope proportionate</td><td class="ok">Met</td><td>No auth, cloud or extra services. Two extra routes (<code>/api/meta</code>, <code>/api/model/add-section</code>).</td></tr>
+<tr><td>Full doc set</td><td class="no">Partly</td><td>README, Project Information, traceability and screenshots exist. Abstract, viva, PPT, Confluence and Demo are empty. The base paper PDF is missing and no DOI is given.</td></tr>
+<tr><td>Base paper cited</td><td class="ok">Met</td><td>Authors, venue, issue, year and ID cited. DOI marked "not provided in the source".</td></tr>
+<tr><td>Command-line buildable</td><td class="ok">Met (macOS)</td><td><code>start.sh</code> and <code>train.sh</code> run. The <code>.bat</code> files and Linux were not run.</td></tr>
+<tr><td>Defaults agree everywhere</td><td class="ok">Met</td><td>Threshold 0.4282 and metrics match across code, README, Project Information and artifacts (checked by me and by tests).</td></tr>
+<tr><td>Model quality measured</td><td class="ok">Met</td><td>CV, held-out test and unseen-wording eval reported, including the weak cases. Re-scored independently: eval accuracy 63.1%.</td></tr>
+<tr><td>Trained with ML-Training-App</td><td class="ok">Met</td><td>Generic tool kept generic. Its new function has no project-specific names.</td></tr>
+<tr><td>Out-of-distribution handled</td><td class="ok">Met</td><td>Low-confidence warning flags 31 of 31 probes. Known miss: fluent on-topic nonsense ("best bakery in France").</td></tr>
+<tr><td>Local-first</td><td class="ok">Met</td><td>No external requests (grepped, and observed in the browser).</td></tr>
+<tr><td>3+ screens, modern UI</td><td class="ok">Met</td><td>4 pages, light and dark, responsive.</td></tr>
+<tr><td>Spec fidelity</td><td class="ok">Met</td><td>See below.</td></tr></table>
+
+<h2>Objectives and how each was verified</h2>
+<table><tr><th>Objective</th><th>Verification</th></tr>
+<tr><td>Extract requirements from a prompt</td><td>Real browser, 3 prompts of different types; extractor and slot unit tests; independent re-score of the eval set.</td></tr>
+<tr><td>Assemble a responsive site and preview at 3 widths</td><td>Renderer tests (valid HTML, viewport meta, @media, no external URLs); device toggles checked live.</td></tr>
+<tr><td>Customize, save, export ZIP</td><td>Live edit, hide, reorder, theme, regenerate, save, reopen, duplicate, delete. ZIP holds exactly 3 files and matches the preview (served on localhost; the built-in browser does not render file:// with CSS).</td></tr>
+<tr><td>Measure and display performance</td><td>About page values compared with metrics.json and eval_results.json; no hardcoded numbers.</td></tr>
+<tr><td>Safe output</td><td>XSS payloads in text and site name are escaped in preview and export; script.js is byte-equal to the template.</td></tr></table>
+
+<h2>Measured results (team-authored data, so optimistic)</h2>
+<table><tr><th>Measure</th><th>5-fold CV</th><th>Held-out test (180)</th><th>Unseen wording (122)</th></tr>
+<tr><td>Site-type accuracy</td><td>0.957 &plusmn; 0.014</td><td>98.9%</td><td>63.1%</td></tr>
+<tr><td>Sections micro F1 (7 learnable)</td><td>0.933 &plusmn; 0.006</td><td>0.941</td><td>0.822</td></tr></table>
+<p>Generation takes about 4 ms on average (p95 4.8 ms). The unseen-wording column is the honest number for real prompts; 49% of those prompts trigger the low-confidence warning.</p>
+
+<h2>Screenshots (real browser captures)</h2>
+<div class="shots">
+<figure><img src="screenshots/builder-result.png" alt="Builder"><figcaption>Builder with the understanding panel</figcaption></figure>
+<figure><img src="screenshots/editor-desktop.png" alt="Editor"><figcaption>Editor, desktop</figcaption></figure>
+<figure><img src="screenshots/editor-mobile.png" alt="Editor mobile"><figcaption>Editor, mobile</figcaption></figure>
+<figure><img src="screenshots/projects.png" alt="Projects"><figcaption>Projects</figcaption></figure>
+<figure><img src="screenshots/about-dark.png" alt="About"><figcaption>About the AI, dark</figcaption></figure>
+<figure><img src="screenshots/builder-low-confidence.png" alt="Low confidence"><figcaption>Low-confidence warning</figcaption></figure>
+</div>
+
+<h2>Defects found and fixed this cycle</h2>
+<ul><li>Tiny horizontal overflow at 375px (theme button): fixed.</li>
+<li>Stale result panel after a validation error: fixed.</li>
+<li>Move up/down did nothing next to a hidden section: fixed, with a test.</li>
+<li>"student reviews" did not select testimonials: training phrasings added, retrained, every number re-recorded in the docs.</li></ul>
+
+<h2>Known limitations</h2>
+<ul><li>Training and eval prompts are templated and authored by the build, not by people; labels were never human-reviewed.</li>
+<li>Fluent on-topic nonsense passes as a confident site; unusual but valid wording is often flagged.</li>
+<li>Output is limited to the 6 site types and 10 sections; copy is placeholder-quality; the contact form is a static mailto.</li>
+<li>The preview iframe is sandboxed, so its mailto form cannot submit there.</li>
+<li>Windows (<code>.bat</code>) and Linux were not run. Python 3.11+ is required.</li>
+<li>The tester could not save PNG evidence; it saved DOM checks and exports instead. Screenshots in <code>docs/screenshots/</code> come from the developer's Playwright run.</li>
+<li>Nothing has been committed or pushed, there is no remote, and no CI exists for this stack.</li></ul>
+
+<h2>Verdict</h2>
+<p>The build meets every stated objective and functional requirement, verified by the tests and by live checks in a real browser, with the deviations above documented. The main caveat is the data: the accuracy figures are measured honestly but on prompts the build authored. Replacing them with human-written prompts is the most valuable next step before a demo.</p>
+</main></body></html>

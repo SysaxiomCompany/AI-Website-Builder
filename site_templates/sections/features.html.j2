@@ -1,0 +1,16 @@
+{% from "_macros.html.j2" import icon %}
+<section class="alt" id="features" aria-labelledby="features-title">
+  <div class="container">
+    <h2 id="features-title">{{ c.title }}</h2>
+    <p class="section-intro">{{ c.intro }}</p>
+    <div class="card-grid cols">
+      {%- for item in c["items"] %}
+      <article class="card">
+        {{ icon(item.icon) }}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

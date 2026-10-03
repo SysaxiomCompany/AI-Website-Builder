@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block title %}Builder - AI Website Builder{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>Describe the website you want</h1>
+  <p class="lead">Write a few sentences in plain English. The app works out what kind of site it is and which sections it needs, builds a responsive page, and lets you edit and download it. Everything runs on this computer.</p>
+</section>
+
+<section class="card prompt-card" aria-labelledby="prompt-label">
+  <form id="prompt-form" novalidate>
+    <label id="prompt-label" for="prompt">Your description</label>
+    <textarea id="prompt" name="prompt" rows="4" maxlength="{{ max_chars }}" placeholder="For example: a modern website for my bakery called Sweet Crumbs with a menu, a gallery and a contact form" aria-describedby="prompt-help prompt-count"></textarea>
+    <div class="field-foot">
+      <span id="prompt-help" class="muted">Mention the kind of site, its name, the sections you want, colors and contact details.</span>
+      <span id="prompt-count" class="muted" aria-live="off">0 / {{ max_chars }}</span>
+    </div>
+    <div class="actions">
+      <button class="btn" id="generate-btn" type="submit"><span class="spinner" aria-hidden="true"></span><span class="btn-label">Generate website</span></button>
+    </div>
+  </form>
+  <div id="prompt-error" class="banner banner-error" role="alert" hidden></div>
+  <div class="examples" aria-labelledby="examples-label">
+    <p id="examples-label" class="muted">Try an example</p>
+    <ul class="chip-list">
+      {% for ex in examples %}<li><button type="button" class="chip example-chip">{{ ex }}</button></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="result" class="card result-card" aria-labelledby="result-title" hidden>
+  <div class="result-head">
+    <h2 id="result-title">How I understood your request</h2>
+    <span id="gen-time" class="badge"></span>
+  </div>
+  <div id="low-conf" class="banner banner-warn" role="alert" hidden>
+    <strong>I am not confident about this description.</strong>
+    <ul id="low-conf-reasons"></ul>
+    <p>The site below is only a guess. Check the site type and sections, correct them if needed, and press <em>Rebuild with my changes</em>, or try a clearer description.</p>
+  </div>
+  <div class="understand-grid">
+    <div>
+      <label for="u-type">Site type</label>
+      <select id="u-type"></select>
+      <div class="meter-wrap">
+        <div class="meter" role="meter" id="conf-meter" aria-valuemin="0" aria-valuemax="100" aria-label="Site type confidence"><span id="conf-fill"></span><i id="conf-mark" title="Low-confidence threshold"></i></div>
+        <p class="muted" id="conf-text"></p>
+      </div>
+      <p class="muted" id="type-scores"></p>
+    </div>
+    <fieldset>
+      <legend>Sections</legend>
+      <div id="u-sections" class="check-grid"></div>
+      <p class="muted">Navigation bar, hero and footer are always included.</p>
+    </fieldset>
+    <div>
+      <p class="label-like">Details I found</p>
+      <div class="slot-grid">
+        <label for="s-name">Site name</label><input id="s-name" type="text" maxlength="80">
+        <label for="s-tagline">Tagline</label><input id="s-tagline" type="text" maxlength="140">
+        <label for="s-email">Email</label><input id="s-email" type="email" maxlength="120">
+        <label for="s-phone">Phone</label><input id="s-phone" type="text" maxlength="30">
+        <label for="s-location">Location</label><input id="s-location" type="text" maxlength="80">
+      </div>
+      <p class="muted" id="s-words"></p>
+    </div>
+  </div>
+  <div class="actions">
+    <a class="btn" id="open-editor" href="#">Open in editor</a>
+    <button class="btn btn-ghost" id="rebuild-btn" type="button"><span class="spinner" aria-hidden="true"></span><span class="btn-label">Rebuild with my changes</span></button>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/builder.js') }}"></script>{% endblock %}

@@ -1,0 +1,20 @@
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container contact-grid">
+    <div>
+      <h2 id="contact-title">{{ c.title }}</h2>
+      <p>{{ c.intro }}</p>
+      <ul class="contact-details">
+        {%- if slots.email %}<li>Email: <a href="mailto:{{ slots.email }}">{{ slots.email }}</a></li>{% endif %}
+        {%- if slots.phone %}<li>Phone: <a href="tel:{{ phone_href }}">{{ slots.phone }}</a></li>{% endif %}
+        {%- if slots.location %}<li>Location: {{ slots.location }}</li>{% endif %}
+      </ul>
+    </div>
+    <form class="contact-form" action="mailto:{{ slots.email or 'hello@example.com' }}" method="post" enctype="text/plain">
+      <label for="contact-name">Your name <input id="contact-name" name="name" type="text" autocomplete="name" required></label>
+      <label for="contact-email">Your email <input id="contact-email" name="email" type="email" autocomplete="email" required></label>
+      <label for="contact-message">Message <textarea id="contact-message" name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="section-intro">This form opens your email program; the site has no server.</p>
+    </form>
+  </div>
+</section>

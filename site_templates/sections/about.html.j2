@@ -1,0 +1,11 @@
+<section id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div>
+      <h2 id="about-title">{{ c.title }}</h2>
+      {%- for p in c.paragraphs %}
+      <p>{{ p }}</p>
+      {%- endfor %}
+    </div>
+    <div class="about-art" role="img" aria-label="Decorative illustration"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4-6.5 8-6.5s7 2 8 6.5"/></svg></div>
+  </div>
+</section>

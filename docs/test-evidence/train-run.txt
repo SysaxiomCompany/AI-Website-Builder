@@ -1,0 +1,31 @@
+train: 840 rows
+val: 180 rows
+test: 180 rows
+TF-IDF mode: no embedding model is loaded or downloaded.
+  [clf] logreg(C=1.0,balanced): val macro-F1 = 0.9614
+  [clf] logreg(C=3.0,balanced): val macro-F1 = 0.9778
+  [clf] logreg(C=10.0,balanced): val macro-F1 = 0.9834
+  [clf] logreg(C=30.0,balanced): val macro-F1 = 0.9834
+  [clf] selected logreg(C=10.0,balanced)
+test classification: accuracy=0.9889 macro_f1=0.9889
+Saved artifact: /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/work/site_type/site_type_bundle.joblib  (1.8s)
+Saved plain scikit-learn classifier: /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/work/site_type/site_type.joblib
+Wrote /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/work/site_type/metrics.json and /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/work/site_type/model_card.md
+train: 840 rows
+val: 180 rows
+test: 180 rows
+modeled labels: ['about', 'features', 'gallery', 'pricing', 'testimonials', 'faq', 'contact']; constant labels: {'navbar': True, 'hero': True, 'footer': True}
+  [multilabel] logreg(C=1.0,balanced): val macro-F1 (thresholds tuned on val) = 0.9618
+  [multilabel] logreg(C=3.0,balanced): val macro-F1 (thresholds tuned on val) = 0.9664
+  [multilabel] logreg(C=10.0,balanced): val macro-F1 (thresholds tuned on val) = 0.9665
+  [multilabel] logreg(C=30.0,balanced): val macro-F1 (thresholds tuned on val) = 0.9670
+test multilabel: micro_f1=0.9650 macro_f1=0.9602 exact=0.6500
+Saved multi-label artifact: /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/work/sections/sections_bundle.joblib
+site type CV accuracy 0.9571 +/- 0.0138; sections CV micro-F1 0.9325 +/- 0.0055; confidence threshold 0.4282
+Wrote /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/artifacts
+test: type acc 0.9889 macroF1 0.9889 | sections micro 0.9407 macro 0.9432 exact 0.6500
+eval: type acc 0.6311 macroF1 0.6330 | sections micro 0.8222 macro 0.7527 exact 0.2869 | hard acc 0.8000
+low-confidence: test 0.050 eval 0.492 ood 31/31
+generation ms: mean 4.23 median 4.24 p95 4.82
+Wrote metrics.json, model_card.md, eval_results.json and /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/docs/test-evidence/ml-evaluation.png
+Done. New files are in ml/artifacts/ and the plot is docs/test-evidence/ml-evaluation.png

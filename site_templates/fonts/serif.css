@@ -1,0 +1,5 @@
+/* Font stack: serif (system fonts only) */
+:root {
+  --font-body: Georgia, "Times New Roman", Times, serif;
+  --font-head: Georgia, "Times New Roman", Times, serif;
+}

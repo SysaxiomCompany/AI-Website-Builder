@@ -1,0 +1,31 @@
+{
+  "label": "Education",
+  "default_name": "Our Academy",
+  "default_tagline": "Learn at your own pace",
+  "nav_labels": {"about": "About", "features": "Courses", "gallery": "Gallery", "pricing": "Fees", "testimonials": "Students", "faq": "FAQ", "contact": "Enrol"},
+  "hero": {"headline": "Learn something new with {name}", "subheadline": "Friendly teachers, clear lessons and a plan that fits your week. Start with one class and grow from there.", "cta_label": "Browse courses", "cta_target": "features"},
+  "about": {"title": "About us", "paragraphs": ["We believe anyone can learn with the right guidance and enough practice. This is sample text: replace it with your own story.", "Our classes are small, our teachers are patient and every student gets feedback they can use."]},
+  "features": {"title": "Courses and programs", "intro": "Choose a course that matches your level. New groups start every month.", "items": [
+    {"title": "Beginner foundations", "text": "Start from zero with step-by-step lessons and plenty of practice.", "icon": "book"},
+    {"title": "Intermediate track", "text": "Build confidence with projects and weekly feedback.", "icon": "star"},
+    {"title": "Advanced workshop", "text": "Small groups, real-world tasks and mentor support.", "icon": "bolt"},
+    {"title": "Weekend intensive", "text": "Learn a lot in two days for people with busy weeks.", "icon": "clock"},
+    {"title": "One-to-one tutoring", "text": "Personal sessions focused on your goals.", "icon": "heart"},
+    {"title": "Certificates", "text": "Finish a course and receive a certificate of completion.", "icon": "check"}]},
+  "gallery": {"title": "Campus life", "items": ["A morning class", "Workshop day", "Group project", "Library corner", "Graduation day", "Study group"]},
+  "pricing": {"title": "Fees", "intro": "Clear fees with no hidden costs. Sample figures, please edit.", "plans": [
+    {"name": "Single course", "price": "$120", "period": "per course", "features": ["Eight weekly lessons", "Course materials", "Certificate"], "highlight": false},
+    {"name": "Term pass", "price": "$300", "period": "per term", "features": ["Up to three courses", "Tutor office hours", "Certificate for each course"], "highlight": true},
+    {"name": "Private tutoring", "price": "$45", "period": "per hour", "features": ["One-to-one", "Flexible times", "Personal study plan"], "highlight": false}]},
+  "testimonials": {"title": "What students say", "items": [
+    {"quote": "I went from nervous beginner to confident in a few months. The teachers are wonderful.", "author": "Rhea D.", "role": "Beginner student"},
+    {"quote": "Clear lessons and quick feedback. I finally understand it.", "author": "Marcus T.", "role": "Evening class"},
+    {"quote": "My daughter looks forward to every lesson.", "author": "Elena V.", "role": "Parent"}]},
+  "faq": {"title": "Frequently asked questions", "items": [
+    {"q": "Do I need any experience?", "a": "No. Beginner courses start from the basics."},
+    {"q": "How do I enrol?", "a": "Send us a message with the course you want and we will confirm your place."},
+    {"q": "Can I switch courses?", "a": "Yes, within the first two weeks and subject to availability."},
+    {"q": "Are classes online or in person?", "a": "Both. Check each course description for its format."}]},
+  "contact": {"title": "Enrol or ask a question", "intro": "Tell us which course interests you and we will reply with dates and details."},
+  "footer": {"text": "{name}. Sample content, edit it to make it yours."}
+}

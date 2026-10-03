@@ -1,0 +1,5 @@
+/* Font stack: mono (system fonts only) */
+:root {
+  --font-body: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --font-head: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}

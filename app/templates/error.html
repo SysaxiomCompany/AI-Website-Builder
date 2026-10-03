@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }} - AI Website Builder{% endblock %}
+{% block content %}
+<section class="empty-state">
+  <h1>{{ title }}</h1>
+  <p>{{ message }}</p>
+  <p><a class="btn" href="{{ url_for('main.builder_page') }}">Back to the Builder</a>
+     <a class="btn btn-ghost" href="{{ url_for('main.projects_page') }}">See projects</a></p>
+</section>
+{% endblock %}

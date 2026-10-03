@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block title %}About the AI - AI Website Builder{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>About the AI</h1>
+  <p class="lead">What is learned, what is rule-based, and how well it works. Every number on this page is read from this project's own measurement files (<code>/api/ml/info</code>, <code>/api/eval</code> and the local ratings); none is typed in by hand and none is taken from the base paper.</p>
+</section>
+<div id="about-error" class="banner banner-error" role="alert" hidden></div>
+
+<section class="banner banner-info" aria-labelledby="honesty-title">
+  <strong id="honesty-title">Read the numbers with care</strong>
+  <p>The classifiers were trained and tested on prompts written by the project team from templates, not on prompts from real users. The scores show how well the models learn that style of writing. They are not general accuracy, and real prompts will usually score lower. The second table, on a different set of prompts with unseen wording, shows how much lower.</p>
+</section>
+
+<section aria-labelledby="stats-title">
+  <h2 id="stats-title">Headline results</h2>
+  <div id="stat-grid" class="stat-grid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+</section>
+
+<section class="card" aria-labelledby="cv-title">
+  <h2 id="cv-title">Cross-validation and held-out scores</h2>
+  <div class="table-wrap"><table id="score-table"><caption class="sr-only">Classifier scores by evaluation set</caption><thead></thead><tbody></tbody></table></div>
+  <p class="muted" id="score-note"></p>
+</section>
+
+<section class="card" aria-labelledby="sections-title">
+  <h2 id="sections-title">Per-section results (held-out test split)</h2>
+  <div class="table-wrap"><table id="section-table"><caption class="sr-only">Per-section threshold, precision, recall and F1</caption><thead><tr><th>Section</th><th>Threshold</th><th>Precision</th><th>Recall</th><th>F1</th><th>Support</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section class="card" aria-labelledby="cm-title">
+  <h2 id="cm-title">Site-type confusion matrix (held-out test split)</h2>
+  <div class="table-wrap"><table id="cm-table" class="matrix"><caption class="sr-only">Rows are true site types, columns are predicted</caption><thead></thead><tbody></tbody></table></div>
+</section>
+
+<section class="card" aria-labelledby="conf-title">
+  <h2 id="conf-title">Low-confidence check</h2>
+  <p id="conf-rule"></p>
+  <ul id="conf-list"></ul>
+  <p class="muted">This check is a heuristic warning. It cannot catch fluent English that mentions a supported topic (for example a question about bakeries), partly relevant prompts, or adversarial text, and some good prompts with unusual wording are flagged too.</p>
+</section>
+
+<section class="card" aria-labelledby="time-title">
+  <h2 id="time-title">Generation time and user ratings</h2>
+  <ul id="time-list"></ul>
+  <div id="rating-box"></div>
+</section>
+
+<section class="card" aria-labelledby="scope-title">
+  <h2 id="scope-title">What is learned and what is not</h2>
+  <div class="two-col">
+    <div><h3>Learned (trained on the project's data)</h3><ul id="learned-list"></ul></div>
+    <div><h3>Rule-based or template assembly</h3><ul>
+      <li>Reading the site name, tagline, email, phone, location, color and tone words (regular expressions and word lists)</li>
+      <li>Choosing the color palette and font stack from color and tone words</li>
+      <li>Section order, and the rule that navigation bar, hero and footer are always present</li>
+      <li>Selecting and filling section templates from the team-written content bank (sample text, editable)</li>
+      <li>Rendering the HTML, CSS and JavaScript, escaping all text, building the ZIP</li>
+    </ul></div>
+  </div>
+  <p>Supported site types: <span id="type-list"></span>. Supported sections: <span id="section-chips"></span>.</p>
+</section>
+
+<section class="card" aria-labelledby="paper-title">
+  <h2 id="paper-title">Base paper and approved changes</h2>
+  <p>Based on: Reddy, Bodhke, Patil, Gorad, Chavan and Mall, "AI Website Builder", International Journal of Creative Research Thoughts (IJCRT), Vol. 13, Issue 10, October 2025, paper ID IJCRTBH02018. DOI: not provided in the source.</p>
+  <p>This project does not reuse the paper's reported accuracy, satisfaction or generation-time figures (the authors measured their own system on an undescribed dataset); it measures its own, shown above.</p>
+  <h3>Deviations from the paper (Change Control)</h3>
+  <ul>
+    <li>scikit-learn TF-IDF classifiers instead of transformer models, spaCy and Hugging Face downloads.</li>
+    <li>A template library with rule-based theme and layout selection instead of generative design models and reinforcement learning (there is no reinforcement-learning component).</li>
+    <li>A local Flask app with ZIP export instead of Flask or Django deployed on Vercel.</li>
+    <li>SQLite and files instead of separate template and content databases.</li>
+    <li>The training prompts and the held-out evaluation prompts were authored by the team as templated, seeded text (no real-user data existed), so measured accuracy is optimistic.</li>
+    <li>Models were trained with the team's generic ML-Training-App text pipeline, extended with an optional multi-label function; the app itself loads only plain scikit-learn and joblib files from <code>ml/artifacts/</code>.</li>
+  </ul>
+</section>
+
+<section class="card" aria-labelledby="card-title">
+  <h2 id="card-title">Model card</h2>
+  <details><summary>Show the full model card (generated by the evaluation run)</summary><pre id="model-card" class="model-card"></pre></details>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/about.js') }}"></script>{% endblock %}

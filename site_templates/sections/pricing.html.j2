@@ -1,0 +1,21 @@
+<section class="alt" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+    <h2 id="pricing-title">{{ c.title }}</h2>
+    <p class="section-intro">{{ c.intro }}</p>
+    <div class="card-grid plans">
+      {%- for plan in c.plans %}
+      <article class="card plan{{ ' highlight' if plan.highlight else '' }}">
+        <h3>{{ plan.name }}</h3>
+        <p class="price">{{ plan.price }}</p>
+        <p class="period">{{ plan.period }}</p>
+        <ul>
+          {%- for f in plan.features %}
+          <li>{{ f }}</li>
+          {%- endfor %}
+        </ul>
+        <a class="btn{{ '' if plan.highlight else ' secondary' }}" href="{{ contact_href }}">Choose {{ plan.name }}</a>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

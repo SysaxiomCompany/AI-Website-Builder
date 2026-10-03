@@ -1,0 +1,12 @@
+/* Palette: slate */
+:root {
+  --bg: #ffffff;
+  --surface: #f1f5f9;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #334155;
+  --on-primary: #ffffff;
+  --primary-2: #1e293b;
+  --border: #d9e0e8;
+  --accent: #0f766e;
+}

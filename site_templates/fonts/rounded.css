@@ -1,0 +1,5 @@
+/* Font stack: rounded (system fonts only) */
+:root {
+  --font-body: ui-rounded, "SF Pro Rounded", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --font-head: ui-rounded, "SF Pro Rounded", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+}
