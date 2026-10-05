@@ -16,7 +16,7 @@ pre{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:
 figcaption{font-size:13px;color:var(--mut)}
 </style></head><body><main>
 <h1>AI Website Builder</h1>
-<p class="sub">A local Flask app that turns a plain-English description into a responsive, editable, exportable website using two trained scikit-learn classifiers, rules and a template library. &middot; ~5 min read &middot; Last verified 2026-10-03</p>
+<p class="sub">A local Flask app that turns a plain-English description into a responsive, editable, exportable website using two trained scikit-learn classifiers, rules and a template library. &middot; ~5 min read &middot; Last verified 2026-10-05</p>
 
 <div class="stats">
 <div class="stat"><b>4 / 4</b>objectives verified</div>
@@ -46,8 +46,8 @@ Browser UI -> Flask routes -> Prompt Preprocessor
 <h2>Standard checklist</h2>
 <table><tr><th>Item</th><th></th><th>Why</th></tr>
 <tr><td>Scope proportionate</td><td class="ok">Met</td><td>No auth, cloud or extra services. Two extra routes (<code>/api/meta</code>, <code>/api/model/add-section</code>).</td></tr>
-<tr><td>Full doc set</td><td class="no">Partly</td><td>README, Project Information, traceability and screenshots exist. Abstract, viva, PPT, Confluence and Demo are empty. The base paper PDF is missing and no DOI is given.</td></tr>
-<tr><td>Base paper cited</td><td class="ok">Met</td><td>Authors, venue, issue, year and ID cited. DOI marked "not provided in the source".</td></tr>
+<tr><td>Full doc set</td><td class="no">Partly</td><td>README, Project Information, traceability, screenshots, base paper PDF, Confluence set, and the Abstract, Project Documentation, Viva Voce and Presentation files are present (existence only; their content was not reviewed). Demo folder is empty. The Deliverables table is still to be filled in.</td></tr>
+<tr><td>Base paper cited</td><td class="ok">Met</td><td>Authors, venue, issue, year and ID cited in the README and Project Information. DOI marked "not provided in the source". PDF is in <code>docs/Base Paper/</code>.</td></tr>
 <tr><td>Command-line buildable</td><td class="ok">Met (macOS)</td><td><code>start.sh</code> and <code>train.sh</code> run. The <code>.bat</code> files and Linux were not run.</td></tr>
 <tr><td>Defaults agree everywhere</td><td class="ok">Met</td><td>Threshold 0.4282 and metrics match across code, README, Project Information and artifacts (checked by me and by tests).</td></tr>
 <tr><td>Model quality measured</td><td class="ok">Met</td><td>CV, held-out test and unseen-wording eval reported, including the weak cases. Re-scored independently: eval accuracy 63.1%.</td></tr>
@@ -93,8 +93,8 @@ Browser UI -> Flask routes -> Prompt Preprocessor
 <li>Output is limited to the 6 site types and 10 sections; copy is placeholder-quality; the contact form is a static mailto.</li>
 <li>The preview iframe is sandboxed, so its mailto form cannot submit there.</li>
 <li>Windows (<code>.bat</code>) and Linux were not run. Python 3.11+ is required.</li>
-<li>The tester could not save PNG evidence; it saved DOM checks and exports instead. Screenshots in <code>docs/screenshots/</code> come from the developer's Playwright run.</li>
-<li>Nothing has been committed or pushed, there is no remote, and no CI exists for this stack.</li></ul>
+<li>The tester could not save PNG evidence; it saved DOM checks and exports instead. Screenshots in <code>docs/screenshots/</code> come from a Playwright run on the final code (unchanged since).</li>
+<li>No CI exists for this stack, so all verification is local (macOS). A second local sign-off pass on 2026-10-05 re-checked the core flows, the four fixes and a few negative cases: all passed (<code>docs/test-evidence/final-signoff-local/</code>).</li></ul>
 
 <h2>Verdict</h2>
 <p>The build meets every stated objective and functional requirement, verified by the tests and by live checks in a real browser, with the deviations above documented. The main caveat is the data: the accuracy figures are measured honestly but on prompts the build authored. Replacing them with human-written prompts is the most valuable next step before a demo.</p>
