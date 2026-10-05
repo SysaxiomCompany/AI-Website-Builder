@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.6, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder
+configfile: pytest.ini
+testpaths: tests
+collected 167 items
+
+tests/test_api.py .........................................              [ 24%]
+tests/test_assembler_renderer.py ....................................... [ 47%]
+........................                                                 [ 62%]
+tests/test_editor_move.py ...                                            [ 64%]
+tests/test_ml_and_data.py .................                              [ 74%]
+tests/test_pages_and_docs.py ...........                                 [ 80%]
+tests/test_preprocess_slots.py ..........                                [ 86%]
+tests/test_security.py ..........                                        [ 92%]
+tests/test_store.py ...                                                  [ 94%]
+tests/test_theme.py .........                                            [100%]
+
+============================= 167 passed in 3.83s ==============================

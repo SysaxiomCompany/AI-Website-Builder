@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block title %}Editor - AI Website Builder{% endblock %}
+{% block main_class %}editor-main{% endblock %}
+{% block content %}
+<div class="editor" data-project-id="{{ pid }}" data-max-chars="{{ max_chars }}">
+  <div class="editor-bar">
+    <label class="sr-only" for="project-name">Project name</label>
+    <input id="project-name" type="text" maxlength="80" aria-label="Project name">
+    <span id="dirty-badge" class="badge badge-warn" hidden>Unsaved changes</span>
+    <span class="spacer"></span>
+    <button class="btn btn-ghost" id="export-btn" type="button">Download ZIP</button>
+    <button class="btn" id="save-btn" type="button"><span class="spinner" aria-hidden="true"></span><span class="btn-label">Save</span></button>
+  </div>
+  <div id="editor-error" class="banner banner-error" role="alert" hidden></div>
+  <div class="editor-tabs" role="tablist" aria-label="Editor view">
+    <button role="tab" id="tab-edit" aria-selected="true" aria-controls="panel-side" type="button">Edit</button>
+    <button role="tab" id="tab-preview" aria-selected="false" aria-controls="panel-preview" type="button">Preview</button>
+  </div>
+  <div class="editor-grid">
+    <aside class="side" id="panel-side" aria-label="Editing tools">
+      <div class="side-tabs" role="tablist" aria-label="Edit sections">
+        <button role="tab" aria-selected="true" data-pane="pane-sections" type="button">Sections</button>
+        <button role="tab" aria-selected="false" data-pane="pane-theme" type="button">Theme</button>
+        <button role="tab" aria-selected="false" data-pane="pane-prompt" type="button">Prompt</button>
+        <button role="tab" aria-selected="false" data-pane="pane-rate" type="button">Rate</button>
+      </div>
+      <div class="pane" id="pane-sections">
+        <p class="muted">Show or hide sections, change their order, and edit any text. Navigation bar, hero and footer cannot be hidden.</p>
+        <ul id="section-list" class="section-list"><li class="skeleton"></li><li class="skeleton"></li></ul>
+        <div id="addable" class="addable" hidden><p class="label-like">Sections not in this site yet</p><div id="addable-list" class="chip-list"></div></div>
+      </div>
+      <div class="pane" id="pane-theme" hidden>
+        <p class="label-like">Color palette</p>
+        <div id="palette-list" class="swatches" role="radiogroup" aria-label="Color palette"></div>
+        <label for="font-select">Font stack (system fonts only)</label>
+        <select id="font-select"></select>
+      </div>
+      <div class="pane" id="pane-prompt" hidden>
+        <div id="understanding" class="muted"></div>
+        <div id="ed-low-conf" class="banner banner-warn" hidden></div>
+        <label for="ed-prompt">Description</label>
+        <textarea id="ed-prompt" rows="5" maxlength="{{ max_chars }}"></textarea>
+        <p class="muted">Regenerating builds a new site from the description and replaces your current text edits.</p>
+        <button class="btn btn-ghost" id="regen-btn" type="button"><span class="spinner" aria-hidden="true"></span><span class="btn-label">Regenerate from this prompt</span></button>
+      </div>
+      <div class="pane" id="pane-rate" hidden>
+        <p class="label-like">How good is this generated site?</p>
+        <div class="stars" role="radiogroup" aria-label="Rating from 1 to 5" id="stars"></div>
+        <label for="rate-comment">Comment (optional)</label>
+        <textarea id="rate-comment" rows="3" maxlength="500"></textarea>
+        <button class="btn" id="rate-btn" type="button">Submit rating</button>
+        <p class="muted" id="rate-status">Ratings are stored only on this computer.</p>
+      </div>
+    </aside>
+    <section class="stage" id="panel-preview" aria-label="Live preview">
+      <div class="stage-bar">
+        <div class="device-toggle" role="radiogroup" aria-label="Preview width">
+          <button type="button" role="radio" aria-checked="true" data-w="desktop">Desktop</button>
+          <button type="button" role="radio" aria-checked="false" data-w="tablet">Tablet</button>
+          <button type="button" role="radio" aria-checked="false" data-w="mobile">Mobile</button>
+        </div>
+        <span id="preview-status" class="muted" aria-live="polite"></span>
+      </div>
+      <div class="frame-wrap" id="frame-wrap">
+        <div class="frame" id="frame" data-device="desktop">
+          <iframe id="preview" title="Website preview" sandbox="allow-scripts"></iframe>
+          <div class="frame-loading" id="frame-loading"><span class="spinner on" aria-hidden="true"></span> Rendering preview</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<dialog id="confirm-dialog" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <h2 id="confirm-title">Replace your edits?</h2>
+    <p id="confirm-text">A new site will be generated from the prompt and your current text edits will be lost.</p>
+    <div class="actions"><button class="btn btn-ghost" value="cancel">Cancel</button><button class="btn btn-danger" value="ok" id="confirm-ok">Regenerate</button></div>
+  </form>
+</dialog>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/editor.js') }}"></script>{% endblock %}

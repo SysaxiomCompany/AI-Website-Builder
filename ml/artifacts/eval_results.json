@@ -1,0 +1,3462 @@
+{
+  "generated_at_utc": "2026-10-03T18:07:53Z",
+  "n": 122,
+  "source": "ml/data/eval_prompts.csv",
+  "site_type": {
+    "accuracy": 0.6311475409836066,
+    "macro_f1": 0.6329754089240013,
+    "labels": [
+      "portfolio",
+      "restaurant",
+      "small_business",
+      "education",
+      "blog",
+      "nonprofit"
+    ],
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        6,
+        0,
+        0,
+        4
+      ],
+      [
+        2,
+        13,
+        1,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        14,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        15,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        14,
+        1
+      ],
+      [
+        3,
+        1,
+        2,
+        2,
+        0,
+        12
+      ]
+    ],
+    "per_class": {
+      "portfolio": {
+        "precision": 0.5,
+        "recall": 0.45,
+        "f1": 0.47368421052631576,
+        "support": 20
+      },
+      "restaurant": {
+        "precision": 0.7222222222222222,
+        "recall": 0.65,
+        "f1": 0.6842105263157895,
+        "support": 20
+      },
+      "small_business": {
+        "precision": 0.5833333333333334,
+        "recall": 0.6666666666666666,
+        "f1": 0.6222222222222222,
+        "support": 21
+      },
+      "education": {
+        "precision": 0.6521739130434783,
+        "recall": 0.7142857142857143,
+        "f1": 0.6818181818181818,
+        "support": 21
+      },
+      "blog": {
+        "precision": 0.875,
+        "recall": 0.7,
+        "f1": 0.7777777777777778,
+        "support": 20
+      },
+      "nonprofit": {
+        "precision": 0.5217391304347826,
+        "recall": 0.6,
+        "f1": 0.5581395348837209,
+        "support": 20
+      }
+    }
+  },
+  "sections": {
+    "scored_labels": [
+      "about",
+      "features",
+      "gallery",
+      "pricing",
+      "testimonials",
+      "faq",
+      "contact"
+    ],
+    "micro_f1": 0.8221574344023324,
+    "macro_f1": 0.7526603761677159,
+    "micro_f1_all10": 0.8960817717206133,
+    "macro_f1_all10": 0.826862263317401,
+    "exact_set_match": 0.28688524590163933,
+    "per_section": {
+      "navbar": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 122
+      },
+      "hero": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 122
+      },
+      "about": {
+        "precision": 0.9099099099099099,
+        "recall": 0.9181818181818182,
+        "f1": 0.9140271493212669,
+        "support": 110
+      },
+      "features": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "support": 110
+      },
+      "gallery": {
+        "precision": 0.7608695652173914,
+        "recall": 0.625,
+        "f1": 0.6862745098039216,
+        "support": 56
+      },
+      "pricing": {
+        "precision": 1.0,
+        "recall": 0.3157894736842105,
+        "f1": 0.48,
+        "support": 38
+      },
+      "testimonials": {
+        "precision": 0.6615384615384615,
+        "recall": 0.7288135593220338,
+        "f1": 0.6935483870967742,
+        "support": 59
+      },
+      "faq": {
+        "precision": 0.5576923076923077,
+        "recall": 0.8529411764705882,
+        "f1": 0.6744186046511628,
+        "support": 34
+      },
+      "contact": {
+        "precision": 0.9122807017543859,
+        "recall": 0.9285714285714286,
+        "f1": 0.9203539823008849,
+        "support": 112
+      },
+      "footer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 122
+      }
+    }
+  },
+  "hard_subset": {
+    "n": 20,
+    "site_type_accuracy": 0.8,
+    "sections_micro_f1": 0.926829268292683,
+    "sections_exact_set_match": 0.45
+  },
+  "low_confidence": {
+    "flagged": 60,
+    "flagged_rate": 0.4918032786885246,
+    "misclassified": 45,
+    "flagged_among_misclassified": 36,
+    "flagged_among_correct": 24
+  },
+  "ood_probe": {
+    "n": 31,
+    "flagged": 31,
+    "flagged_rate": 1.0,
+    "by_kind": {
+      "gibberish": {
+        "n": 8,
+        "flagged": 8
+      },
+      "unrelated": {
+        "n": 10,
+        "flagged": 10
+      },
+      "too short": {
+        "n": 5,
+        "flagged": 5
+      },
+      "non-English": {
+        "n": 6,
+        "flagged": 6
+      },
+      "code": {
+        "n": 2,
+        "flagged": 2
+      }
+    },
+    "not_flagged": []
+  },
+  "generation_time": {
+    "n": 122,
+    "mean_ms": 4.230734992025184,
+    "median_ms": 4.242958999384427,
+    "p95_ms": 4.820876748999578,
+    "max_ms": 5.783624998002779,
+    "engine_only_mean_ms": 2.5513452705216295,
+    "scope": "prompt preprocessing + requirement extraction (both classifiers + slot rules) + assembly + theme + rendering and validity check of index.html/style.css/script.js, one pass over each eval prompt after 5 warm-up runs",
+    "machine": "Darwin arm64, Python 3.11.6"
+  },
+  "provenance": "Team-authored, templated prompts (ml/data/build_dataset.py); labels derived by rules from the written content; accuracy is optimistic for real users' prompts.",
+  "items": [
+    {
+      "text": "Looking for a polished online home to represent a catering service - the name is Tidewater. It needs email and phone details.",
+      "true_type": "restaurant",
+      "pred_type": "education",
+      "confidence": 0.581,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.34
+    },
+    {
+      "text": "visual highlights, that is what visitors of our interior stylist one-page site - the name is Wild Meadow should see. I'd like it to feel calm.",
+      "true_type": "portfolio",
+      "pred_type": "nonprofit",
+      "confidence": 0.307,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.24
+    },
+    {
+      "text": "My friend and I started a tutoring centre; set up something sleek with Q&A and a grid of images named Wild Meadow. Use dark grey colours.",
+      "true_type": "education",
+      "pred_type": "nonprofit",
+      "confidence": 0.5,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.47
+    },
+    {
+      "text": "a who-are-we blurb, what it costs, we do not need cllient projects, that is what visitors of our sound enngineer page on the web should see. We are based in Madison. Honestly we have no idea where to start.",
+      "true_type": "portfolio",
+      "pred_type": "nonprofit",
+      "confidence": 0.308,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.25
+    },
+    {
+      "text": "My friend and I started a family diner; set up something sleek with a menu board. I'd like it to feel calm.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.708,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.17
+    },
+    {
+      "text": "my photography work, mostly weddings, with a gallery and a contact form",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.742,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.34
+    },
+    {
+      "text": "We just opened a landscape painter; help us get web space.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.405,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.29
+    },
+    {
+      "text": "Set up a page on the web for our landscape painter named Copper Kettle.",
+      "true_type": "portfolio",
+      "pred_type": "restaurant",
+      "confidence": 0.341,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.07
+    },
+    {
+      "text": "Put together an one-page site for a robotics workshop. Must show success stories and a bit about me named Riverbend. Use green colours. Nothing fancy, we just want people to find us.",
+      "true_type": "education",
+      "pred_type": "blog",
+      "confidence": 0.238,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.87
+    },
+    {
+      "text": "It needs to feel trustworthy. My friend and I started a tea house; set up something welcoming with nothing but snapshots and a menu board.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.938,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "gallery",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.22
+    },
+    {
+      "text": "We just opened an art school; help us get online home (called \"Orchid Row\").",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.928,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "faq",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.44
+    },
+    {
+      "text": "i'd like it to feel professional. we are based in cork. most of our visitors will be on mobile. looking for a welcoming online home to represent an art school named moonlit pages. it needs a message form.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.949,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.35
+    },
+    {
+      "text": "carpenter, show finished furniture pictures and what we charge",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.518,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.2
+    },
+    {
+      "text": "Design something lightweight for a moving company (called \"Thistle Co\") - strictly a visual showcase and an enquiry form would be great.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.52,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.47
+    },
+    {
+      "text": "our charity runs a marathon every year, we need a page for it",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.982,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.93
+    },
+    {
+      "text": "online lessons for people who want to learn guitar with a price list",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.783,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 5.78
+    },
+    {
+      "text": "Honestly we have no idea where to start. quotes from happy customers, our teaching programmes, snapshots and background information, that is what visitors of our chess academy page on the web - the name is Kindle House should see.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.543,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.86
+    },
+    {
+      "text": "We just opened a cycling blog; help us get online home. A friend suggested we get something online.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.732,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "faq",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.45
+    },
+    {
+      "text": "page on the web idea: sound engineer named Echo Valley, featuring visual highlights, recent work plus what it costs.",
+      "true_type": "portfolio",
+      "pred_type": "nonprofit",
+      "confidence": 0.4,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.93
+    },
+    {
+      "text": "We run a DIY crafts blog and want an one-page site: a who-are-we blurb, a photo wall.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.964,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.01
+    },
+    {
+      "text": "quotes from happy customers but drop background information, that is what visitors of our DIY crafts blog online home, Echo Valley should see. Most of our visitors will be on mobile.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.542,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.3
+    },
+    {
+      "text": "Hello! Could you help me with an one-page site for a mental health blog? Ideally strictly ticket prices, a get-in-touch area.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.751,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.35
+    },
+    {
+      "text": "My friend and I started a library frinds society; set up something cosy with a grid of imgaes plus a who-are--we blurb (called \"Juniper Hill\").",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.547,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.41
+    },
+    {
+      "text": "something for my business",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.887,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.93
+    },
+    {
+      "text": "Looking for a sleek diital presence to repreesnt a tutoring centre, Juniper Hill. It needs background information.",
+      "true_type": "education",
+      "pred_type": "nonprofit",
+      "confidence": 0.569,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.17
+    },
+    {
+      "text": "Looking for a calm web space to represent an interior stylist named Copper Kettle. It needs nothing but a get-in-touch area plus rates.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.221,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.17
+    },
+    {
+      "text": "page on the web idea: game developer (called \"Copper Kettle\"), featuring my best pieces plus endorsements",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.811,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.11
+    },
+    {
+      "text": "Looking for a vibrant online home to represent a bookkeeping practice. It needs a questions page, kind words from visitors, email and phone details. Use black and white colours.",
+      "true_type": "small_business",
+      "pred_type": "education",
+      "confidence": 0.66,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.35
+    },
+    {
+      "text": "I want people to read my travel stories and see my photos",
+      "true_type": "blog",
+      "pred_type": "portfolio",
+      "confidence": 0.392,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.15
+    },
+    {
+      "text": "My friend and I started a scouts troop; set up something vibrant with ways to reach us, the story behind the project, visual highlights.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.223,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.15
+    },
+    {
+      "text": "Something welcoming for a bookkeeping practice, nothhing more specific yet.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.515,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.94
+    },
+    {
+      "text": "my friend and i started a landscape painter; set up something calm with user feedback and a help section with common queries but we do not need snapshots. we are based in halifax.",
+      "true_type": "portfolio",
+      "pred_type": "nonprofit",
+      "confidence": 0.277,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.3
+    },
+    {
+      "text": "looking for a cosy web space to represent a poetry blog. it needs a visual showcase, recent stories, the story behind the project.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.798,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.11
+    },
+    {
+      "text": "set up a online home for our literacy charity, northwind.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.882,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.94
+    },
+    {
+      "text": "Put together a digital presence for a ramen shop. Must show user feedback, daily specials, a grid of images - the name is Kindle House. Use red colours.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.828,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.35
+    },
+    {
+      "text": "Hello! Could you help me with a digital presence for a robotics workshop? Ideally email and phone details, answers to typical questions and quotes from happy customers. We are based in Perth.",
+      "true_type": "education",
+      "pred_type": "small_business",
+      "confidence": 0.259,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.34
+    },
+    {
+      "text": "We run a roofing contractor and want a web space: endorsements, a grid of images and a list of what we handle.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.587,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.22
+    },
+    {
+      "text": "Design something polished for a news digest (called \"Echo Valley\") - success stories, a photo wall would be great. I'd like it to feel minimal. We are based in Tucson. It needs to feel trustworthy.",
+      "true_type": "blog",
+      "pred_type": "nonprofit",
+      "confidence": 0.264,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.37
+    },
+    {
+      "text": "Use green colours. Looking for a calm digital presence to represent a DIY crafts blog. It needs subscription tiers, a bit about me plus a questions page.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.824,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.4
+    },
+    {
+      "text": "We are based in Raleigh. a bit about me, our service range, answers to typical questions and success stories, that is what visitors of our pest control firm page on the web - the name is Lumen Labs should see.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.772,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.9
+    },
+    {
+      "text": "Lookking for a sleek page on the web to represent a moovie review site. It needs keep it to top articles and what it costs.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.366,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "pricing",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.43
+    },
+    {
+      "text": "Design something polished for a mvoie review site - sucess stories, a grid of images, and background information would be great. Use soft green colours.",
+      "true_type": "blog",
+      "pred_type": "restaurant",
+      "confidence": 0.218,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.83
+    },
+    {
+      "text": "we collect donations for stray cats and want volunteers to sign up",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.441,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.2
+    },
+    {
+      "text": "Put together an one-page site for an exam coaching centre. Must show the lessons we run, Q&A, and what it costs.",
+      "true_type": "education",
+      "pred_type": "nonprofit",
+      "confidence": 0.506,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.48
+    },
+    {
+      "text": "Hello! Could you help me with a web space for a landscape painter? Ideally a company profile.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.834,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.08
+    },
+    {
+      "text": "Sometthing sleek for a print shop, nothing more specific yet.",
+      "true_type": "small_business",
+      "pred_type": "restaurant",
+      "confidence": 0.908,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.0
+    },
+    {
+      "text": "a bit about me, what it costs, and a questions page, that is what visitors of our pest control firm digital presence, Wild Meadow should see. It needs to feel trustworthy.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.36,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.43
+    },
+    {
+      "text": "keep it to a photo wall and subscription tiers, that is what visitors of our library friends society page on the web, Echo Valley should see. Use teal colours.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.445,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "gallery",
+        "pricing",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.59
+    },
+    {
+      "text": "Design something cosy for a family diner - what it costs, Q&A, a who-are-we blurb, a photo wall would be great.",
+      "true_type": "restaurant",
+      "pred_type": "small_business",
+      "confidence": 0.236,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.28
+    },
+    {
+      "text": "a small web design agency offering packages, with reviews from past clients",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.874,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.99
+    },
+    {
+      "text": "web space idea: gardening blog, featuring ticket prices plus a photo wall.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.892,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.13
+    },
+    {
+      "text": "school science fair page with questions parents ask",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.99,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.91
+    },
+    {
+      "text": "online home idea: diy crafts blog, featuring recent stories and kind words from visitors, we do not need enquiry form.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.663,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.06
+    },
+    {
+      "text": "Set up a web space for our moving company. Nothing fancy, we just want people to find us.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.685,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "testimonials",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.43
+    },
+    {
+      "text": "web space idea: photography journal, featuring ticket prices, kind words from visitors plus a bit about me.",
+      "true_type": "blog",
+      "pred_type": "portfolio",
+      "confidence": 0.512,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.4
+    },
+    {
+      "text": "strictly email and phone detils and visual highlights, that is what visitoors of our ramen shop page on the web should see. We are bassed in Perth.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.484,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.31
+    },
+    {
+      "text": "I'd like it to feel professional. Can you do something for a steakhouse - the name is Marigold?",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.417,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.18
+    },
+    {
+      "text": "Put together an one-page site for a juice bar. Must show an enquiry form, a photo wall, and answers to typical questions. Use dark grey colours.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.413,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.54
+    },
+    {
+      "text": "Put together an one-page site for a locksmith. Must show the jobs we do, rtes, the story behind the project. Use teal colours.",
+      "true_type": "small_business",
+      "pred_type": "portfolio",
+      "confidence": 0.372,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.99
+    },
+    {
+      "text": "a list of my writing, ticket prices, snapshots and a bit about me, that is what visitors of our gardening blog one-page site - the name is Echo Valley should see.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.819,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 5.44
+    },
+    {
+      "text": "We are based in Bristol. Can you do something for a pest control firm, Juniper Hill?",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.675,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.17
+    },
+    {
+      "text": "Design something cosy for a tattoo artist, Northwind - answers to typical questions would be great.",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.879,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.4
+    },
+    {
+      "text": "I'd like a digital presence for a print shop, Brass Anchor.",
+      "true_type": "small_business",
+      "pred_type": "restaurant",
+      "confidence": 0.662,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.45
+    },
+    {
+      "text": "an artist showing paintings with a price list",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.738,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.6
+    },
+    {
+      "text": "rates, that is what visitors of our ramen shop one-page site should see.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.63,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.87
+    },
+    {
+      "text": "online home idea: family diner (called \"Marigold\"), featuring a who-are-we blurb and the dishes we serve but snapshots is not wanted",
+      "true_type": "restaurant",
+      "pred_type": "education",
+      "confidence": 0.359,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.46
+    },
+    {
+      "text": "design something vibrant for a laundromat named lumen labs - rates, the jobs we do, and a grid of images would be great. we are based in leeds.",
+      "true_type": "small_business",
+      "pred_type": "nonprofit",
+      "confidence": 0.37,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.48
+    },
+    {
+      "text": "a who-are-we blurb, quotes from happy customers, rates, our teaching programmes, that is what visitors of our robotics workshop page on the web should see. Use black and white colours.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.498,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.9
+    },
+    {
+      "text": "put together an one-page site for a dance academy. must show a help section with commmon queries. use black and white colours.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.698,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.3
+    },
+    {
+      "text": "Put together an online home for a juice bar. Must show subscription tiers, kind words from visitors and the story behind the project named Tidewater.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.369,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.17
+    },
+    {
+      "text": "a site",
+      "true_type": "small_business",
+      "pred_type": "blog",
+      "confidence": 0.259,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.65
+    },
+    {
+      "text": "My friend and I started a clean water initiative; set up something sleek with a message form, a cost breakdown. A friend suggested we get something online.",
+      "true_type": "nonprofit",
+      "pred_type": "education",
+      "confidence": 0.378,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.46
+    },
+    {
+      "text": "We run a family diner, Saffron Road and want a digital presence: strictly endorsements, a cost breakdown plus snapshots.",
+      "true_type": "restaurant",
+      "pred_type": "portfolio",
+      "confidence": 0.361,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "gallery",
+        "pricing",
+        "testimonials",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.58
+    },
+    {
+      "text": "homepage for the local football fundraiser, just our story and how to contact us",
+      "true_type": "nonprofit",
+      "pred_type": "small_business",
+      "confidence": 0.28,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.42
+    },
+    {
+      "text": "I'd like it to feel elegant. Hello! Could you help me with an online home for a robotics workshop, Northwind? Ideally endorsements and background information.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.728,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.58
+    },
+    {
+      "text": "Put together a page on the web for a scouts troop. Must show kind words from visitors, the story behind the project (called \"Copper Kettle\").",
+      "true_type": "nonprofit",
+      "pred_type": "portfolio",
+      "confidence": 0.418,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.21
+    },
+    {
+      "text": "developer resume with side projects",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.984,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.34
+    },
+    {
+      "text": "My friend and I started a news digest; set up something polished with email and phone details and a cost breakdown but leave out top articles. I'd like it to feel friendly. We are based in Bristol. Most of our visitors will be on mobile.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.308,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.55
+    },
+    {
+      "text": "Hello! Could you help me with a page on the web for a clean water initiative? Ideally ongoing projects and a who-are-we blurb.",
+      "true_type": "nonprofit",
+      "pred_type": "portfolio",
+      "confidence": 0.374,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.4
+    },
+    {
+      "text": "I'd like an online home for a mental health blog.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.805,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.16
+    },
+    {
+      "text": "Something lightweight for a library friends society, nothing more specific yet. Honestly we have no idea where to start.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.485,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.34
+    },
+    {
+      "text": "Can you do something for a bookkeeping practice (called \"Harbor Light\")? Use orange colours.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.559,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.3
+    },
+    {
+      "text": "set up a web space for our interior stylist, moonlit pages. nothing fancy, we just want people to find us.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.269,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "testimonials",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.51
+    },
+    {
+      "text": "bistro with daily specials, customer reviews and no gallery",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.891,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.15
+    },
+    {
+      "text": "web space idea: handyman service - the name is Thistle Co, feautring a list of what we handle",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.75,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.11
+    },
+    {
+      "text": "a visual showcase and ways to reach us, that is what visitors of our ramen shop online home should see.",
+      "true_type": "restaurant",
+      "pred_type": "education",
+      "confidence": 0.385,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.43
+    },
+    {
+      "text": "I'd like it to feel professional. Set up a digital presence for our ramen shop.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.638,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.02
+    },
+    {
+      "text": "one-page site idea: disaster relief group, featuring what it costs and ongoing projects",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.773,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.15
+    },
+    {
+      "text": "Design something calm for a homeless outreach (called \"Lumen Labs\") - rates and a company profile would be great.",
+      "true_type": "nonprofit",
+      "pred_type": "small_business",
+      "confidence": 0.655,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.54
+    },
+    {
+      "text": "We just opened a robotics workshop; help us get page on the web.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.285,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.35
+    },
+    {
+      "text": "a visual showcase, the story behind the project and subscription tiers, that is what visitors of our brewery taproom web space should see.",
+      "true_type": "restaurant",
+      "pred_type": "portfolio",
+      "confidence": 0.281,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.62
+    },
+    {
+      "text": "Hello! Could you help me with an one-page site for a roofing contractor? Ideally rates, a help section with common queies and qutoes from happy customers.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.358,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.38
+    },
+    {
+      "text": "We run a scouts troop and want an one-page site: the story behind the project plus success stories. Nothing fancy, we just want people to find us.",
+      "true_type": "nonprofit",
+      "pred_type": "portfolio",
+      "confidence": 0.233,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.43
+    },
+    {
+      "text": "nothing but ticket prices plus email and phone details, that is what visitors of our literacy charity online home should see.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.637,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.47
+    },
+    {
+      "text": "Hello! Could you help me with an one-page site for a preschool named Juniper Hill? Ideally visual highights and subscription tiers but leave out get-in-touch area.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.485,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "faq",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.23
+    },
+    {
+      "text": "My friend and I started a tutoring centre; set up something lightweight with the lessons we run, rates, background information. Use teal colours. It needs to feel trustworthy.",
+      "true_type": "education",
+      "pred_type": "nonprofit",
+      "confidence": 0.472,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.5
+    },
+    {
+      "text": "family run pizza place with prices and photos of our oven",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.417,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "pricing",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.36
+    },
+    {
+      "text": "a place where I post my recipes and write about cooking",
+      "true_type": "blog",
+      "pred_type": "education",
+      "confidence": 0.3,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.0
+    },
+    {
+      "text": "Set up a online home for our park conservancy (called \"Moonlit Pages\"). Honestly we have no idea where to start.",
+      "true_type": "nonprofit",
+      "pred_type": "education",
+      "confidence": 0.591,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.92
+    },
+    {
+      "text": "coffee cart, only a menu and a way to find us",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.748,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.11
+    },
+    {
+      "text": "tutor for kids, show our class fees and frequently asked questions",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.37,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.33
+    },
+    {
+      "text": "Use black and whtie colours. Can you do something for a scouts troop named Orchid Row?",
+      "true_type": "nonprofit",
+      "pred_type": "restaurant",
+      "confidence": 0.258,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.24
+    },
+    {
+      "text": "Put together a digital presence for a landscape painter. Must show a help section with common queries, quotes from happy customers, a visual showcase and client projects. Use black and white colours.",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.447,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.61
+    },
+    {
+      "text": "design something vibrant for a data scientist named echo valley - a photo wall, ways to reach us and user feedback would be great.",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.305,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.54
+    },
+    {
+      "text": "My friend and I started an art school; set up something cosy with a photo wall and the story behind the project.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.72,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.26
+    },
+    {
+      "text": "Design something lightweight for a data scientist - a company profile would be great.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.586,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.07
+    },
+    {
+      "text": "Use pink colours. It needs to feel trustworthy. Put together a web space for a locksmith. Must show a help section with common queries, an enquiry form, subscription tiers and our offerings.",
+      "true_type": "small_business",
+      "pred_type": "nonprofit",
+      "confidence": 0.448,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.57
+    },
+    {
+      "text": "music lessons with a gallery of recitals and reviews from parents",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.517,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.07
+    },
+    {
+      "text": "My friend and I started a brewery taproom; set up something welcoming with snapshots and a menu board.",
+      "true_type": "restaurant",
+      "pred_type": "restaurant",
+      "confidence": 0.768,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.06
+    },
+    {
+      "text": "I'd like it to feel playful. a who-are-we blurb and subscription tiers but we do not need email and phone details, that is what visitors of our poetry blog page on the web should see.",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.598,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.33
+    },
+    {
+      "text": "My friend and I started an interior stylist; set up something vibrant with a photo wall, client projects and kind words from visitors. Most of our visitors will be on mobile.",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.684,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.55
+    },
+    {
+      "text": "Put together a digital presence for a handyman service. Must show the jobs we do.",
+      "true_type": "small_business",
+      "pred_type": "small_business",
+      "confidence": 0.525,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 3.99
+    },
+    {
+      "text": "Design something sleek for a disaster relief group - rates, a get-in-touch area, quotes from happy customers would be great.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.866,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "pricing",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.06
+    },
+    {
+      "text": "design something sharp for a reffugee support group - keep it to a who--are-we blurb, a grid of images and rates would be great. i'd like it to feel professional.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.662,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "gallery",
+        "pricing",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.21
+    },
+    {
+      "text": "Put together an online home for a photography journal. Must show quotes from happy customers, top articles, and a company profile.",
+      "true_type": "blog",
+      "pred_type": "portfolio",
+      "confidence": 0.439,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.44
+    },
+    {
+      "text": "Put together an online home for a family diner. Must show the dishes we serve but drop enquiry form.",
+      "true_type": "restaurant",
+      "pred_type": "education",
+      "confidence": 0.514,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.02
+    },
+    {
+      "text": "web space idea: chess academy named Tidewater, featuring quotes from happy customers plus the lessons we run. Use yellow colours.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.613,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.2
+    },
+    {
+      "text": "site for my sourdough bread newsletter and articles",
+      "true_type": "blog",
+      "pred_type": "blog",
+      "confidence": 0.815,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.76
+    },
+    {
+      "text": "Use purple colours. We just opened a tattoo artist; help us get web space (called \"Brass Anchor\").",
+      "true_type": "portfolio",
+      "pred_type": "portfolio",
+      "confidence": 0.578,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "gallery",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 3.66
+    },
+    {
+      "text": "Looking for a calm web sapce to represent an art school. It needs the story behind the project, endorsements. We are based in Perth.",
+      "true_type": "education",
+      "pred_type": "education",
+      "confidence": 0.818,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.12
+    },
+    {
+      "text": "We run a landscape painter, Brass Anchor and want a page on the web: keep it to a questions page and a photo wall.",
+      "true_type": "portfolio",
+      "pred_type": "small_business",
+      "confidence": 0.309,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "gallery",
+        "faq",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": true,
+      "gen_ms": 4.32
+    },
+    {
+      "text": "Put together a page on the web for a library friends society. Must show a questioons page, a company profile, our causes plus a visual showcase.",
+      "true_type": "nonprofit",
+      "pred_type": "nonprofit",
+      "confidence": 0.526,
+      "true_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "gallery",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "pred_sections": [
+        "navbar",
+        "hero",
+        "about",
+        "features",
+        "testimonials",
+        "faq",
+        "contact",
+        "footer"
+      ],
+      "low_confidence": false,
+      "gen_ms": 4.37
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+/* Palette: sunset */
+:root {
+  --bg: #fffaf5;
+  --surface: #fff0e3;
+  --text: #2b1a12;
+  --muted: #6a4a3a;
+  --primary: #b4440e;
+  --on-primary: #ffffff;
+  --primary-2: #8c3208;
+  --border: #f0d9c6;
+  --accent: #a15c00;
+}

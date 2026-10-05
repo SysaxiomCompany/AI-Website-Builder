@@ -1,0 +1,12 @@
+/* Palette: midnight */
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #e2e8f0;
+  --muted: #a8b3c5;
+  --primary: #7cb7ff;
+  --on-primary: #0b1220;
+  --primary-2: #5b9cf0;
+  --border: #334155;
+  --accent: #5eead4;
+}

@@ -1,0 +1,31 @@
+{
+  "label": "Portfolio",
+  "default_name": "My Portfolio",
+  "default_tagline": "Selected work and the story behind it",
+  "nav_labels": {"about": "About", "features": "Work", "gallery": "Gallery", "pricing": "Rates", "testimonials": "Kind words", "faq": "FAQ", "contact": "Contact"},
+  "hero": {"headline": "Hi, I'm {name}", "subheadline": "I design and build things people enjoy using. Take a look at my recent work or get in touch about a new project.", "cta_label": "See my work", "cta_target": "features"},
+  "about": {"title": "About me", "paragraphs": ["I am a creative professional who cares about clear ideas, careful details and honest collaboration. This is sample text: replace it with your own story.", "Most of my projects start with a conversation. I listen first, sketch quickly and share progress often so there are no surprises at the end."]},
+  "features": {"title": "Selected work", "intro": "A few projects I am proud of. Each one began with a problem worth solving.", "items": [
+    {"title": "Brand refresh", "text": "A new identity, colour system and guidelines for a growing local studio.", "icon": "star"},
+    {"title": "Product launch site", "text": "A fast, accessible landing page that doubled sign-ups in its first month.", "icon": "bolt"},
+    {"title": "Mobile app design", "text": "Screens, prototypes and a small design system handed over to developers.", "icon": "check"},
+    {"title": "Photo series", "text": "A personal project about quiet places and early mornings.", "icon": "camera"},
+    {"title": "Editorial layout", "text": "Typography-led pages for a printed and online magazine.", "icon": "book"},
+    {"title": "Open-source toolkit", "text": "Small, well-documented tools shared freely with the community.", "icon": "heart"}]},
+  "gallery": {"title": "Gallery", "items": ["Studio desk in morning light", "Sketches for the brand refresh", "Launch site on a tablet", "Colour study", "Behind the scenes", "Exhibition wall"]},
+  "pricing": {"title": "Working together", "intro": "Simple starting points. Every project is quoted after a short call.", "plans": [
+    {"name": "Starter", "price": "$450", "period": "per project", "features": ["One deliverable", "Two revision rounds", "Source files"], "highlight": false},
+    {"name": "Standard", "price": "$1,200", "period": "per project", "features": ["Up to five deliverables", "Three revision rounds", "Source files and guidelines"], "highlight": true},
+    {"name": "Retainer", "price": "$900", "period": "per month", "features": ["Ongoing support", "Priority replies", "Monthly review call"], "highlight": false}]},
+  "testimonials": {"title": "Kind words", "items": [
+    {"quote": "Calm, quick and exactly what we needed. The result looked better than we had imagined.", "author": "Priya N.", "role": "Studio owner"},
+    {"quote": "Clear communication from start to finish, and the handover was spotless.", "author": "Daniel R.", "role": "Product manager"},
+    {"quote": "A real eye for detail. We keep coming back.", "author": "Marta L.", "role": "Magazine editor"}]},
+  "faq": {"title": "Questions", "items": [
+    {"q": "How long does a project take?", "a": "Small projects take one to two weeks; larger ones are planned together at the start."},
+    {"q": "Do you work with people abroad?", "a": "Yes. Calls and shared documents work well across time zones."},
+    {"q": "Can I see the source files?", "a": "Source files are included with every package."},
+    {"q": "What do you need from me to start?", "a": "A short brief, a few examples you like and an idea of your timeline."}]},
+  "contact": {"title": "Let's talk", "intro": "Tell me about your project. I usually reply within two working days."},
+  "footer": {"text": "{name}. Sample content, edit it to make it yours."}
+}

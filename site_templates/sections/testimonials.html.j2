@@ -1,0 +1,13 @@
+<section id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <h2 id="testimonials-title">{{ c.title }}</h2>
+    <div class="card-grid cols">
+      {%- for t in c["items"] %}
+      <blockquote class="card">
+        <p>&ldquo;{{ t.quote }}&rdquo;</p>
+        <footer><strong>{{ t.author }}</strong>{% if t.role %}, {{ t.role }}{% endif %}</footer>
+      </blockquote>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

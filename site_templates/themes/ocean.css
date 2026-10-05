@@ -1,0 +1,12 @@
+/* Palette: ocean */
+:root {
+  --bg: #ffffff;
+  --surface: #f1f6fb;
+  --text: #14213d;
+  --muted: #44546a;
+  --primary: #0b5cad;
+  --on-primary: #ffffff;
+  --primary-2: #08407a;
+  --border: #d5dfec;
+  --accent: #0e7490;
+}

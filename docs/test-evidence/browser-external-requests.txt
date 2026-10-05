@@ -1,0 +1,2 @@
+External (non-localhost, non-data) requests observed while capturing screenshots of all pages and the exported site:
+none

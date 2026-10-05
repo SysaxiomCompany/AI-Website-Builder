@@ -1,0 +1,181 @@
+text,site_type,sections
+"Burger joint homepage: a photo gallery, info about us, without location and contact info.",restaurant,navbar|hero|about|features|gallery|footer
+"It should look good on phones too. Build me an architect landing page, it should have selected works, packages and rates, student feedback and a showcase of photos.",portfolio,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+Can you generate a fresh lannding page for a taco stand? I want a contaact section.,restaurant,navbar|hero|about|features|gallery|contact|footer
+"Environmental group homepage, warm look, with a contact us page and an about section called Quiet Pines. We are based in Denver.",nonprofit,navbar|hero|about|features|testimonials|contact|footer
+"Create a warm landing page for a food truck with a short bio, price plans, and a contact form.",restaurant,navbar|hero|about|features|gallery|pricing|contact|footer
+"Create a fresh landing page for flight school with pricing, photos and our programs.",education,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+make me a minimal web page for a CV website,portfolio,navbar|hero|about|features|gallery|contact|footer
+"generate website animal shelter, its name is paw palace a tiny site with just an about me section plus a testimonials section. i'd like it to feel minimal.",nonprofit,navbar|hero|about|testimonials|footer
+"our customers keep asking for a proper site. gastropub landing page: a faq section, a section about who we are, packages and rates, and a list of our specials.",restaurant,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+"I'd like it to feel professional. We are based in Portland. It should look good on phones too. Build me a hair salon website, it should have common questions, customer testimonials, an image gallery, and a way to get in touch.",small_business,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+"generate website bbq grill called Clear Path location and contact info, an about section, a showcase of photos, and our dishes. Use warm orange and brown colours.",restaurant,navbar|hero|about|features|gallery|contact|footer
+Please design a homepage for an UX designer named Bright Minds that shows just a picture grid and a short bio.,portfolio,navbar|hero|about|gallery|footer
+"Can you generate a friendly homepage for scholarship fund? I want only pictures, feedback from customers, frequently asked questions. Use blue colours. We are based in Miami.",nonprofit,navbar|hero|gallery|testimonials|faq|footer
+"Ceate a bold landing page for a pet blog with a tiny site with just price plans, an image gallery. We have been around since 2015 and love what we do.",blog,navbar|hero|gallery|pricing|footer
+"Create a warm landing page for a cleaning service with membership plans, pictures, a services list, frequently asked questions. We are based in Chicago.",small_business,navbar|hero|about|features|gallery|pricing|testimonials|faq|contact|footer
+"generate website volunteer organisation ""Little Lantern"" a pricing table. Use red colours. It should look good on phones too.",nonprofit,navbar|hero|about|features|pricing|testimonials|contact|footer
+"I need a website for portfolio ""Sunny Side"". Keep it easy to read.",portfolio,navbar|hero|about|features|gallery|contact|footer
+"Build me a personal journal web presence, it should have a contact us page, reviews and pictures. Use blue colours. We are based in Portland.",blog,navbar|hero|about|features|gallery|testimonials|contact|footer
+"generate website small business ""Happy Tails"" our services, contact details and packages and rates",small_business,navbar|hero|about|features|pricing|testimonials|contact|footer
+"i need a colourful web page for a food blog. include member reviews, a way to get in touch plus an faq. use orange colours.",blog,navbar|hero|about|features|testimonials|faq|contact|footer
+"Build me a car repair shop site ""Little Lantern"", it should have a section about who we are. Use yellow colours.",small_business,navbar|hero|about|features|testimonials|contact|footer
+"Use deep blue colours. Our customers keep asking for a proper site. generate website bagel shop called ""Cedar & Co"" price plans, a contact us page plus a section about who we are.",restaurant,navbar|hero|about|features|gallery|pricing|contact|footer
+"Sculptor landing page ""Pixel Nest"": frequently asked questions, contact details and a photo gallery.",portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+"Cocktail bar homepage, elegant look, with the food menu",restaurant,navbar|hero|about|features|gallery|contact|footer
+website for a piano lessons named Willow Creek.,education,navbar|hero|about|features|faq|contact|footer
+"make a landing page for a music school called ""Happy Tails""; add a contact section. I'd like it to feel playful. We are based in Boston.",education,navbar|hero|about|features|faq|contact|footer
+"Painting contractor web presence: a contact section, our prices.",small_business,navbar|hero|about|features|pricing|testimonials|contact|footer
+"Use blue colours. We are based in Portland. Can you generate a elegant site for maths tutoring service called Willow Creek? I want an about section, our prices, a way to get in touch, and a picture grid.",education,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+"Taco stand web presence, minimal look, with membership plans and a contact section but don't add about me section",restaurant,navbar|hero|features|gallery|pricing|contact|footer
+I am not technical at all. Can you generate a professional homepage for book review blog? I want a contact us page and a gallery but without about us page.,blog,navbar|hero|features|gallery|contact|footer
+"Create a professional homepage for soup kitchen called Rapid Fix with client feedback, a contact us page, an image gallery, our story.",nonprofit,navbar|hero|about|features|gallery|testimonials|contact|footer
+"We are based in Boston. I want a web presence for a soup kitchen - what we do, frequently asked questions, packages and rates plus location and contact info.",nonprofit,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+"I need a elegant web page for a pet blog called Sunny Side. Include a contact section, skip section about who we are.",blog,navbar|hero|features|contact|footer
+website for an environmental group named Urban Spoon.,nonprofit,navbar|hero|about|features|testimonials|contact|footer
+Test prep course web presence: photos,education,navbar|hero|about|features|gallery|faq|contact|footer
+"make a web page for a science blog; add common questions, a photo gallery and ratings and reviews. We are based in Portland.",blog,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+"Use red colours. Gaming blog web presence, its name is Nova Studio: a contact us page, a testimonials section and pricing.",blog,navbar|hero|about|features|pricing|testimonials|contact|footer
+"can you generate a elegant web page for a fashion blog, its name is pixel nest? i want an faq.",blog,navbar|hero|about|features|faq|contact|footer
+"make a site for a vocational college called ""green valley""; add frequently asked questions, a contact us page, and fees",education,navbar|hero|about|features|pricing|faq|contact|footer
+"I want a web presence for home decor blog called Green Valley - a sohrt bio, reviews from our clients, a way to get in touch and a list of recent artcles.",blog,navbar|hero|about|features|testimonials|contact|footer
+"Create a professional website for law office with a contact form, skip services list. Use yellow colours. We are based in London.",small_business,navbar|hero|about|testimonials|contact|footer
+Create a elegant site for a veterans association with an FAQ but no contact details. Use dark grey colours.,nonprofit,navbar|hero|about|features|testimonials|faq|footer
+"I want a site for a maths club - a list of courses, frequently asked questions, a contact form plus a testimonials section.",education,navbar|hero|about|features|testimonials|faq|contact|footer
+"Teacher training programme web page ""Summit Learning"": pictures, no contact form",education,navbar|hero|about|features|gallery|faq|footer
+"make a landing page for a daily diary; add featured posts, membership plans, ratings and reviews, common questions.",blog,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+Can you generate a responsive site for an art director? I want a contact us page and questions and answers. I am not technical at all.,portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+I am not technical at all. I need a simple website for law office. Include membership plans and common questions.,small_business,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+build a website for my vocational college,education,navbar|hero|about|features|faq|contact|footer
+"Can you generate a minimal website for a DJ? I want an about section, a showcase of photos.",portfolio,navbar|hero|about|features|gallery|contact|footer
+"Please design a landing page for a food truck that shows a menu section, photos, a short bio and student feedback.",restaurant,navbar|hero|about|features|gallery|testimonials|contact|footer
+"generate website freelance photographer, its name is Mango Tree location and contact info, a FAQ section plus client feedback. We are based in Austin.",portfolio,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+"We are based in Portland. It should look good on phones too. Piano lessons homepage called Little Lantern: membership plans, an about me section.",education,navbar|hero|about|features|pricing|faq|contact|footer
+"I want a web presence for a daily diary - common questions, pictures, and a short bio.",blog,navbar|hero|about|features|gallery|faq|contact|footer
+"I want a homepage for a plumbing company called ""Clear Path"" - a contact form but skip services. I'd like it to feel elegant.",small_business,navbar|hero|about|testimonials|contact|footer
+"Can you generate a minimal site for a career blog, its name is Blue Harbor? I want a FAQ section plus featured posts.",blog,navbar|hero|about|features|faq|contact|footer
+"make a site for furniture store ""Sunny Side""; add a photo gallery, feedback from customers, packages and rates plus service offerings.",small_business,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"generate website video editor, its name is Clear Path a gallery, questions and answers plus an about us page.",portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+"Create a colourful site for web developer called ""Stone Bridge"" with an about section, selected works, our prices, and frequently asked questions.",portfolio,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+Creperie web presence: a showcase of photos but without food menu,restaurant,navbar|hero|about|gallery|contact|footer
+I need a web presence for a video editor.,portfolio,navbar|hero|about|features|gallery|contact|footer
+"food truck web page, warm look, with only frequently asked questions and an about section. it should look good on phones too.",restaurant,navbar|hero|about|faq|footer
+"Food bank web page: only an about me section, a photo gallery, and contact details. Our customers keep asking for a proper site.",nonprofit,navbar|hero|about|gallery|contact|footer
+"Art blog site: our storry, an imgae gallery, packages and rates plus latest posts. We have been around since 2015 and love what we do.",blog,navbar|hero|about|features|gallery|pricing|contact|footer
+"make a website for a salad bar, its name is Urban Spoon; add parent reviews and a gallery but skip story. Use purple colours.",restaurant,navbar|hero|features|gallery|testimonials|contact|footer
+I need a web presence for wildlife trust called Ink and Ivory,nonprofit,navbar|hero|about|features|testimonials|contact|footer
+"generate website parenting blog, its name is Nova Studio an about me section, a way to get in touch, and a FAQ section. Use green colours.",blog,navbar|hero|about|features|faq|contact|footer
+"Build me an ocean cleanup group landing page named Green Valley, it should have campaign highlights, pictures plus contact details.",nonprofit,navbar|hero|about|features|gallery|testimonials|contact|footer
+"Build me a graphic designer homepage named Clear Path, it should have a section about who we are, a FAQ section and fees.",portfolio,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+"Can you generate a warm website for an accounting firm named Little Lantern? I want membership plans plus client feedback, no services.",small_business,navbar|hero|about|pricing|testimonials|contact|footer
+I need a warm homepage for a maths tutoring service called Sunny Side. Include a tiny site with just an image gallery plus course listings.,education,navbar|hero|features|gallery|footer
+"Wine bar website, simple look, with membership plans and the food menu. We are based in London.",restaurant,navbar|hero|about|features|gallery|pricing|contact|footer
+Consulting firm web presence. We are based in Seattle.,small_business,navbar|hero|about|features|testimonials|contact|footer
+Wildlife trust site: what we do but skip contact form. I am not technical at all.,nonprofit,navbar|hero|about|features|testimonials|footer
+"I want a homepage for a graphic designer - info about us, case studies.",portfolio,navbar|hero|about|features|gallery|contact|footer
+"create a friendly web page for a creative director called ""quiet pines"".",portfolio,navbar|hero|about|features|gallery|contact|footer
+"Use teal colours. It should look good on phones too. Running diary web presence, minimal look, with a section about who we are.",blog,navbar|hero|about|features|contact|footer
+"Use teal colours. Can you generate a colourful homepage for a nursery school? I want a contact section, pctures.",education,navbar|hero|about|features|gallery|faq|contact|footer
+"make a homepage for a potter ""Nova Studio""; add an about me section, a testimonials section.",portfolio,navbar|hero|about|features|gallery|testimonials|contact|footer
+generate website plumbing company a services list and contact details.,small_business,navbar|hero|about|features|testimonials|contact|footer
+website for consulting firm,small_business,navbar|hero|about|features|testimonials|contact|footer
+"i need a clean web page for a bookshop ""harvest table"". include a contact us page. use warm orange and brown colours.",small_business,navbar|hero|about|features|testimonials|contact|footer
+"Use orange colours. I need a website for a parenting blog, its name is Cedar & Co.",blog,navbar|hero|about|features|contact|footer
+"I need a elegant homepage for motion artist. Include a tiny site with just client feedback, a way to get in touch, questions and answers. I'd like it to feel minimal. It should look good on phones too.",portfolio,navbar|hero|testimonials|faq|contact|footer
+"Inssurance agency web presence ""Rapid Fix"": service offerings, a FAQ section.",small_business,navbar|hero|about|features|testimonials|faq|contact|footer
+"Create a bold web page for travel agency with a FAQ section, our services and a contact us page. It should look good on phones too.",small_business,navbar|hero|about|features|testimonials|faq|contact|footer
+"please design a web presence for a wine bar ""clear path"" that shows membership plans, a contact section plus student reviews.",restaurant,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"Cocktail bar website: a menu, an FAQ and a short bio. Use yellow colours.",restaurant,navbar|hero|about|features|gallery|faq|contact|footer
+i need a bold web presence for a mssage clinic. include membership plans but don't add services. it should look good on phones too.,small_business,navbar|hero|about|pricing|testimonials|contact|footer
+"build me a cartoonist landing page, its name is nova studio, it should have a gallery, reviews, pricing, location and contact info.",portfolio,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"Personal portfolio website ""Willow Creek"": my projects plus questions and answers. I'd like it to feel professional. Our customers keep asking for a proper site.",portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+Create a playful website for coding bootcamp with just an about us page plus testimonials.,education,navbar|hero|about|testimonials|footer
+"generate website tutoring academy ""Golden Whisk"" an FAQ",education,navbar|hero|about|features|faq|contact|footer
+"Build me a cocktail bar web presence, it should have a tiny site with just common questions, guest reviews.",restaurant,navbar|hero|testimonials|faq|footer
+Create a fresh web presence for software engineer.,portfolio,navbar|hero|about|features|gallery|contact|footer
+"Please design a homepage for a wine bar ""Sunny Side"" that shows questions and answers and a showcase of photos. Keep it easy to read.",restaurant,navbar|hero|about|features|gallery|faq|contact|footer
+"make a site for education charity; add fees, campaign highlights plus info about us. use yellow colours.",nonprofit,navbar|hero|about|features|pricing|testimonials|contact|footer
+"I want a web presence for a web developer ""Nova Studio"" - a tiny site with just a showcase of photos and packages and rates. Use soft green colours. It should look good on phones too.",portfolio,navbar|hero|gallery|pricing|footer
+"Plesae deesign a web page for nursery school, its name is Harvest Table that shows an FAQ, a short bio and a photo gallery.",education,navbar|hero|about|features|gallery|faq|contact|footer
+i need a responsive homepage for an ux designer named quiet pines. include location and contact info plus a faq section. we are based in toronto.,portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+"Insurance agency web page ""Sweet Crumbs"": a tiny site with just our services, frequently asked questions, and a photo gallery",small_business,navbar|hero|features|gallery|faq|footer
+I need a bold web presence for scholarship fund. Include a contact us page and a FAQ section.,nonprofit,navbar|hero|about|features|testimonials|faq|contact|footer
+"Can you generate a professional web presence for a language school? I want a contact section, a testimonials section, an about me section, and a showcase of photos.",education,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+Scool homepage named Mpale Lane: only raings and rviews and a way to get in touch.,education,navbar|hero|testimonials|contact|footer
+"I want a site for soup kitchen called Blue Harbor - a tiny site with just an about us page, pricing.",nonprofit,navbar|hero|about|pricing|footer
+"make a landing page for a test prep course named Mango Tree; add common questions, a curriculum section plus contact details. It should look good on phones too.",education,navbar|hero|about|features|faq|contact|footer
+Food bank landing page. I'd like it to feel calm. We are based in Portland.,nonprofit,navbar|hero|about|features|testimonials|contact|footer
+"Youth foundation landing page: a short bio, common questions and a showcase of photos. I'd like it to feel friendly.",nonprofit,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+I'd like it to feel professional. We have been around since 2015 and love what we do. build a website for my opinion blog.,blog,navbar|hero|about|features|contact|footer
+build a website for my science club called Summit Leaarning.,education,navbar|hero|about|features|faq|contact|footer
+build a website for my lifestyle blog,blog,navbar|hero|about|features|contact|footer
+"Church group landing page, warm look, with just an FAQ and a photo gallery called Sweet Crumbs. We are based in Chicago.",nonprofit,navbar|hero|gallery|faq|footer
+I want a landing page for an auto garage named Rapid Fix - a tiny site with just questions and answers and a section for what we offer.,small_business,navbar|hero|features|faq|footer
+I need a modern web presence for a design studio portfolio. Include pictures plus a contact form.,portfolio,navbar|hero|about|features|gallery|contact|footer
+Use deep blue colours. I want a site for veterans association - customer testimonials plus an image gallery.,nonprofit,navbar|hero|about|features|gallery|testimonials|contact|footer
+"Build me a curry house website, it should have student feedback.",restaurant,navbar|hero|about|features|gallery|testimonials|contact|footer
+Please design a web presence for a painting contractor that shows an about me section and service offerings. I'd like it to feel elegant.,small_business,navbar|hero|about|features|testimonials|contact|footer
+"Teacher training programme landing page ""Paw Palace"": a way to get in touch, the class schedule. We are based in Boston.",education,navbar|hero|about|features|faq|contact|footer
+"Orphanage website, friendly look, with price plans plus an FAQ. Our customers keep asking for a proper site.",nonprofit,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+"generate website copywriter pricing, our story, and selected works. We are based in Denver. It should look good on phones too.",portfolio,navbar|hero|about|features|gallery|pricing|contact|footer
+Use pink colours. Can you generate a simple web presence for an auto garage? I want our services and questions and answers.,small_business,navbar|hero|about|features|testimonials|faq|contact|footer
+"I want a web page for vocational college called ""Little Lantern"" - just a curriculum section and a contact section. I'd like it to feel friendly.",education,navbar|hero|features|contact|footer
+"I want a landing page for a kindergarten - just a pricing table, reviews from our clients. We have been around since 2015 and love what we do.",education,navbar|hero|pricing|testimonials|footer
+"I want a website for newsletter - fees, a section about who we are and an image gallery. Use blue colours.",blog,navbar|hero|about|features|gallery|pricing|contact|footer
+"Build me a hardware store site called Mango Tree, it should have questions and answers, our prices plus location and contact info.",small_business,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+"Please design a homepage for piano lessons that shows price plans, a short bio, a picture grid and a list of courses.",education,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+"build me a wildlife trust web presence called ""paw palace"", it should have an image gallery, an about section, and campaign highlights.",nonprofit,navbar|hero|about|features|gallery|testimonials|contact|footer
+Can you generate a bold landing page for a minimalism blog? I want an about us page and latest posts.,blog,navbar|hero|about|features|contact|footer
+"please design a web page for a web developer that shows our story, no contact us page. use teal colours.",portfolio,navbar|hero|about|features|gallery|footer
+"I want a web presence for a smoothie bar - membership plans, without menu section. Use dark grey colours.",restaurant,navbar|hero|about|gallery|pricing|contact|footer
+"Create a friendly web presence for charity, its name is Green Valley with a showcase of photos. I'd like it to feel calm.",nonprofit,navbar|hero|about|features|gallery|testimonials|contact|footer
+"Can you generate a modern website for an education charity, its name is Nova Studio? I want a photo gallery and a FAQ section.",nonprofit,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+"bagel shop web presence, colourful look, with customer testimonials and our dishes. use warm orange and brown colours. we are based in seattle.",restaurant,navbar|hero|about|features|gallery|testimonials|contact|footer
+"Create a elegant landing page for an auto garage ""Happy Tails"" with a pricing table and our services.",small_business,navbar|hero|about|features|pricing|testimonials|contact|footer
+"Copywriter web page, minimal look, with packages and rates, common quesstions and member reviews called ""Willow Creek""",portfolio,navbar|hero|about|features|gallery|pricing|testimonials|faq|contact|footer
+"Create a bold web presence for an online course called Harvest Table with our programs, photos, frequently asked questions, packages and raets.",education,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+make a website for a gaming blog; add a photo gallery and a contact us page,blog,navbar|hero|about|features|gallery|contact|footer
+"Please design a web page for a noodle house, its name is Urban Spoon that shows our dishes, a FAQ section and contact details.",restaurant,navbar|hero|about|features|gallery|faq|contact|footer
+I want a web page for pastry shop - questions and answers. Use purple colours. I am not technical at all.,restaurant,navbar|hero|about|features|gallery|faq|contact|footer
+generate website CV website named Stone Bridge a tiny site with just a contact section and a showcase of my work.,portfolio,navbar|hero|features|contact|footer
+"make a web page for a nursery school ""Rapid Fix""; add an about section and frequently asked questions.",education,navbar|hero|about|features|faq|contact|footer
+make me a bold site for sandwich shop,restaurant,navbar|hero|about|features|gallery|contact|footer
+"Student blog website named Open Door: a way to get in touch, a showcase of photos, and a pricing table. Our customers keep asking for a proper site.",blog,navbar|hero|about|features|gallery|pricing|contact|footer
+"Use blue colours. build a website for my daily diary, its name is Paw Palace.",blog,navbar|hero|about|features|contact|footer
+"generate website soup kitchen called ""Happy Tails"" pricing, a short bio, ratings and reviews and a picture grid",nonprofit,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"Fitness blog homepage, warm look, with a showcase of photos but skip contact form, its name is Blue Harbor. I am not technical at all.",blog,navbar|hero|about|features|gallery|footer
+Can you generate a professional web page for a writing blog? I want a picture grid plus a pricing table.,blog,navbar|hero|about|features|gallery|pricing|contact|footer
+"Writing blog landing page, clean look, with packages and rates, featured posts and an FAQ.",blog,navbar|hero|about|features|pricing|faq|contact|footer
+make a web page for a history blog; add customer testimonials but don't add location and contact info,blog,navbar|hero|about|features|testimonials|footer
+Please design a website for community garden that shows info abut us plus price plans. I'd like it to feel minimal.,nonprofit,navbar|hero|about|features|pricing|testimonials|contact|footer
+"Build me a landscaping business site, it should have a picture grid, our prices, our services.",small_business,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"I need a stylish web presence for a chocolate shop. Incclude questions and answers, info about us and packages and rates. We are based in Lodnon. Our customers keep asking for a proper site.",restaurant,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+create a playful website for veterinary clinic.,small_business,navbar|hero|about|features|testimonials|contact|footer
+build a website for my food blog called Quiet Pines. Use soft green colours.,blog,navbar|hero|about|features|contact|footer
+"please design a landing page for a cleaning service that shows frequently asked questions, an image gallery, ratings and reviews and a way to get in touch. our customers keep asking for a proper site.",small_business,navbar|hero|about|features|gallery|testimonials|faq|contact|footer
+"I'd like it to feel minimal. We are based in Dublin. Our customers keep asking for a proper site. Gastropub landing page: pictures and an about us page, no way to get in touch.",restaurant,navbar|hero|about|features|gallery|footer
+"It should look good on phones too. Can you generate a professional web page for a fashion blog? I want our story, testimonials, skip contact details.",blog,navbar|hero|about|features|testimonials|footer
+Use blue colours. I need a web page for car repair shop.,small_business,navbar|hero|about|features|testimonials|contact|footer
+"Real estate agency site called Quiet Pines: location and contact info, an FAQ, packages and rates and an about section. We are based in Dublin. We have been around since 2015 and love what we do.",small_business,navbar|hero|about|features|pricing|testimonials|faq|contact|footer
+"It should look good on phones too. Florist web presence named Ink and Ivory: packages and rates, contact details, reviews and our story.",small_business,navbar|hero|about|features|pricing|testimonials|contact|footer
+"generate website DJ pricing, selected works and a picture grid.",portfolio,navbar|hero|about|features|gallery|pricing|contact|footer
+"Build me a church group homepage, it should have just a list of causes, an abuot us page. Use green colours.",nonprofit,navbar|hero|about|features|footer
+"Musician web presence ""Daily Brew""",portfolio,navbar|hero|about|features|gallery|contact|footer
+generate website reliief fund an about us page and feedbaack from csutomers.,nonprofit,navbar|hero|about|features|testimonials|contact|footer
+"Use pink colours. Create a professional site for food bank with a photo gallery, our programs, and packages and rates.",nonprofit,navbar|hero|about|features|gallery|pricing|testimonials|contact|footer
+"Create a elegant website for an architect with only a photo gallery, guest reviews. Use blue colours.",portfolio,navbar|hero|gallery|testimonials|footer
+"Product designer website, stylish look, with a contact us page, an FAQ. I'd like it to feel dark. Keep it easy to read.",portfolio,navbar|hero|about|features|gallery|faq|contact|footer
+generate website restaurant a tiny site with just questions and answers and our prices. Our customers keep asking for a proper site.,restaurant,navbar|hero|pricing|faq|footer
+"I want a website for a coding club - a tiny site with just a FAQ section, our story.",education,navbar|hero|about|faq|footer
+"I need a responsive web page for a college. Include questions and answers, a photo gallery, packages and rates and location and contact info. We are based in Toronto.",education,navbar|hero|about|features|gallery|pricing|faq|contact|footer
+build a website for my fitness blog,blog,navbar|hero|about|features|contact|footer
+build a website for my taco stand.,restaurant,navbar|hero|about|features|gallery|contact|footer
+I need a modern web page for a training institute called Happy Tails. Include a picture grid.,education,navbar|hero|about|features|gallery|faq|contact|footer
+Teacher training programme web presence. It should look good on phones too.,education,navbar|hero|about|features|faq|contact|footer
+"Use brown colours. I want a website for an alumni association called ""Lotus Works"" - price plans and our story.",nonprofit,navbar|hero|about|features|pricing|testimonials|contact|footer
+"Use orange colours. We have been around since 2015 and love what we do. Please design a landing page for a cafe that shows parent reviews, a gallery.",restaurant,navbar|hero|about|features|gallery|testimonials|contact|footer
+"Youth foundation web presence ""Happy Tails"": our prices. I am not technical at all.",nonprofit,navbar|hero|about|features|pricing|testimonials|contact|footer
+"Smoothie bar web presence, professional look, with our prices but skip contact us page.",restaurant,navbar|hero|about|features|gallery|pricing|footer
+"I want a landing page for window cleaning business called ""Green Valley"" - a FAQ section. Use purple colours. We are based in Miami.",small_business,navbar|hero|about|features|testimonials|faq|contact|footer
+We are based in Toronto. I need a landing page for a bakery.,restaurant,navbar|hero|about|features|gallery|contact|footer
+"Teacher training programme site, playful look, with a tiny site with just an FAQ, pricing, and feedback from customers",education,navbar|hero|pricing|testimonials|faq|footer

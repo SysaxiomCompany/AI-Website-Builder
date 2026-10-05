@@ -1,0 +1,11 @@
+<header class="site-header" id="navbar">
+  <nav class="nav container" aria-label="Main">
+    <a class="brand" href="#top">{{ slots.name }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    <ul class="nav-links" id="nav-links">
+      {%- for link in nav %}
+      <li><a href="#{{ link.id }}">{{ link.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+</header>

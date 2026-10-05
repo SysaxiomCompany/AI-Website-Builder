@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.DS_Store
+# runtime data: SQLite file and exported ZIPs
+data/*.sqlite3
+data/*.sqlite3-*
+*.zip
+# training scratch (the tool's own bundles); ml/artifacts/ IS committed
+ml/work/

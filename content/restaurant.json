@@ -1,0 +1,31 @@
+{
+  "label": "Restaurant",
+  "default_name": "Our Kitchen",
+  "default_tagline": "Fresh food, made with care",
+  "nav_labels": {"about": "Our story", "features": "Menu", "gallery": "Gallery", "pricing": "Prices", "testimonials": "Reviews", "faq": "FAQ", "contact": "Visit us"},
+  "hero": {"headline": "Welcome to {name}", "subheadline": "Good ingredients, simple recipes and a warm table. Come hungry, leave happy.", "cta_label": "See the menu", "cta_target": "features"},
+  "about": {"title": "Our story", "paragraphs": ["We started with a small kitchen and a big love for sharing food. This is sample text: replace it with your own story.", "Everything is prepared fresh each day, using ingredients from nearby growers and bakers wherever we can."]},
+  "features": {"title": "From the menu", "intro": "A taste of what we cook. Ask about today's specials and dietary options.", "items": [
+    {"title": "House special", "text": "Our signature dish, slow cooked and served with seasonal sides.", "icon": "star"},
+    {"title": "Fresh starters", "text": "Light plates to share: soups, salads and small bites.", "icon": "heart"},
+    {"title": "Hot from the oven", "text": "Baked goods and mains made in small batches all day.", "icon": "clock"},
+    {"title": "Sweet endings", "text": "Desserts made in-house, from classic favourites to new ideas.", "icon": "check"},
+    {"title": "Drinks", "text": "Coffee, tea, juices and a short list of local drinks.", "icon": "bolt"},
+    {"title": "Kids and special diets", "text": "Smaller portions and vegetarian, vegan and gluten-free choices.", "icon": "shield"}]},
+  "gallery": {"title": "A look inside", "items": ["The dining room", "Fresh bread at sunrise", "Our signature dish", "Dessert counter", "Friends at the table", "The open kitchen"]},
+  "pricing": {"title": "Prices", "intro": "Fair prices for honest food. Sample figures, please edit.", "plans": [
+    {"name": "Lunch set", "price": "$12", "period": "per person", "features": ["Main and a drink", "Served 11:00 to 15:00", "Changes weekly"], "highlight": false},
+    {"name": "Dinner for two", "price": "$48", "period": "per table", "features": ["Two starters", "Two mains", "One dessert to share"], "highlight": true},
+    {"name": "Family table", "price": "$85", "period": "up to five people", "features": ["Sharing platters", "Soft drinks included", "Kids dessert free"], "highlight": false}]},
+  "testimonials": {"title": "What guests say", "items": [
+    {"quote": "The best meal we have had all year. Friendly staff and generous portions.", "author": "Sam & Jo", "role": "Weekend regulars"},
+    {"quote": "Cosy place, lovely food and quick service even when it is busy.", "author": "Aisha K.", "role": "Local guest"},
+    {"quote": "We booked a birthday here and everything was perfect.", "author": "Luis M.", "role": "Party host"}]},
+  "faq": {"title": "Good to know", "items": [
+    {"q": "Do I need to book a table?", "a": "Walk-ins are welcome; for groups of six or more please send us a message first."},
+    {"q": "Do you offer vegetarian or vegan dishes?", "a": "Yes, every section of the menu has vegetarian options and we can adapt many dishes."},
+    {"q": "Can I order takeaway?", "a": "Yes. Send us your order or visit the counter."},
+    {"q": "Is the place accessible?", "a": "Yes, there is step-free access to the dining room."}]},
+  "contact": {"title": "Visit us", "intro": "Find us at {location}. Send a message to book a table or ask a question."},
+  "footer": {"text": "{name}. Sample content, edit it to make it yours."}
+}

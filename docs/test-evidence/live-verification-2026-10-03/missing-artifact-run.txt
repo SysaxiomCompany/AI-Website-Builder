@@ -1,0 +1,5 @@
+
+Cannot start: Trained model files are missing from /Users/vijaysn/Documents/Projects/FinalYearProjects/Template/Android/AiWebsiteBuilder/ml/artifacts: site_type.joblib.
+Create them with  ./train.sh  (macOS/Linux)  or  train.bat  (Windows).  The app never falls back to another method.
+
+exit code: 1

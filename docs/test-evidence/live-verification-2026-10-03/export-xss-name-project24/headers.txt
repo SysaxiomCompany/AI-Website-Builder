@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.11.6
+Date: Sat, 03 Oct 2026 18:04:30 GMT
+Content-Disposition: attachment; filename="img-src-x-onerror-alert-1-script-alert-1-script.zip"
+Content-Type: application/zip
+Content-Length: 4854
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer
+Cache-Control: no-store
+Connection: close
+
