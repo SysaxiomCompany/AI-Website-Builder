@@ -1,0 +1,21 @@
+== empty
+{"error":{"code":"empty_prompt","message":"Please type a description of the website you want."}}
+ [400]
+== long
+{"error":{"code":"prompt_too_long","message":"The description is too long (1001 characters; the limit is 1000). Please shorten it."}}
+ [400]
+== unknown id GET
+{"error":{"code":"not_found","message":"No project with id 99999."}}
+ [404]
+== unknown id DELETE
+{"error":{"code":"not_found","message":"No project with id 99999."}}
+ [404]
+== unknown export
+{"error":{"code":"not_found","message":"No project with id 99999."}}
+ [404]
+== unknown editor page
+[404]
+== OOD asdf qwerty
+1 {"site_type": "nonprofit", "confidence": 0.47769219089935405, "type_scores": {"nonprofit": 0.47769219089935405, "portfolio": 0.14314709457838795, "restaurant": 0.1259368544316444, "education": 0.11105246413839842, "small_business": 0.08518905678653171, "blog": 0.05698233916568338}, "predicted_sections": ["navbar", "hero", "about", "features", "testimonials", "contact", "footer"], "sections": ["navbar", "hero", "about", "features", "testimonials", "contact", "footer"], "section_scores": {"navbar": 1.0, "hero": 1.0, "about": 0.9862584666587595, "features": 0.9917457685252262, "gallery": 0.488747
+== OOD what is the capital of France
+2 {"site_type": "small_business", "confidence": 0.35990014326584663, "type_scores": {"small_business": 0.35990014326584663, "nonprofit": 0.21839058765269648, "restaurant": 0.18284575021242905, "education": 0.13201350833216213, "portfolio": 0.057147690748663355, "blog": 0.049702319788202255}, "predicted_sections": ["navbar", "hero", "about", "features", "testimonials", "contact", "footer"], "sections": ["navbar", "hero", "about", "features", "testimonials", "contact", "footer"], "section_scores": {"navbar": 1.0, "hero": 1.0, "about": 0.955296486545602, "features": 0.9917461928999916, "gallery": 0

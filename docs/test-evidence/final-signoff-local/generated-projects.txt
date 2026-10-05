@@ -1,0 +1,4 @@
+3 Sweet Crumbs ['navbar', 'hero', 'about', 'features', 'gallery', 'testimonials', 'contact', 'footer']
+{"name": "Sweet Crumbs", "tagline": "Fresh food, made with care", "email": "hello@sweetcrumbs.test", "phone": "", "location": "", "colors": [], "tones": ["cozy"]}
+4 CodeNest ['navbar', 'hero', 'about', 'features', 'pricing', 'testimonials', 'faq', 'contact', 'footer']
+{"name": "CodeNest", "tagline": "Learn at your own pace", "email": "", "phone": "", "location": "", "colors": [], "tones": []}
